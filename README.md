@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -361,15 +360,15 @@
 
       <p style="margin-top: 0.5rem;">
         GitHub:
-        <a href="https://github.com/yourusername" target="_blank">
-          github.com/yourusername
+        <a href="https://github.com/Sahvir-Bhaskaruni" target="_blank">
+          github.com/Sahvir-Bhaskaruni
         </a>
       </p>
 
       <p style="margin-top: 0.5rem;">
         LinkedIn:
-        <a href="#">
-          Add your LinkedIn here
+        <a href="https://www.linkedin.com/in/sahvir-bhaskaruni/">
+          linkedin.com/in/sahvir-bhaskaruni/
         </a>
       </p>
 
