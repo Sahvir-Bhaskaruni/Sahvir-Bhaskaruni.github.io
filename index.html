@@ -150,6 +150,53 @@
       font-weight: 700;
     }
 
+    /* ABOUT / HERO GRID */
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr;
+      gap: 4rem;
+      align-items: center;
+      min-height: 90vh;
+    }
+    
+    .about-image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .about-image img {
+      width: 100%;
+      max-width: 380px;
+      border-radius: 24px;
+      object-fit: cover;
+    
+      border: 1px solid rgba(255,255,255,0.08);
+    
+      box-shadow:
+        0 20px 40px rgba(0,0,0,0.25);
+    }
+    
+    /* MOBILE */
+    
+    @media (max-width: 900px) {
+    
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+    
+      .about-image {
+        order: -1;
+        margin-bottom: 2rem;
+      }
+    
+      .about-image img {
+        max-width: 260px;
+      }
+    
+    }
+    
     /* PROJECTS */
 
     .projects-grid {
@@ -228,6 +275,7 @@
 
 <body>
 
+
   <!-- NAVBAR -->
 
   <nav>
@@ -244,48 +292,68 @@
 
   <!-- HERO -->
 
-  <section class="hero">
-    <div class="container hero-content">
-
-      <h1>About Me</h1>
-
-      <h2>
-        Biomedical Engineering Student · Quantitative Biology Enthusiast · Builder
-      </h2>
-
-      <p>
-        Hi! I'm Sahvir, a biomedical engineering student at UVA excited
-        about all things quantitative biology — computational biology, 
-        systems modeling, transcriptomics, and more. I enjoy exploring how
-        mathematical and computational approaches can help us better 
-        understand complex biological systems. 
-      </p>
-
-      <p>
-        This website is a place for me to document projects, share ideas, and
-        showcase some of the things I've been learning and building over the
-        years. A lot of my work sits at the intersection of biology,
-        computation, and engineering, and exploring what the future holds there.
-      </p>
-
-      <p>
-        I'm always excited to learn about new tools, approaches, and share what 
-        I've been building! 
-      </p>
-
-      <div class="hero-buttons">
-        <a class="btn btn-primary" href="#projects">
-          View Projects
-        </a>
-
-        <a class="btn btn-secondary" href="https://github.com/yourusername" target="_blank">
-          GitHub
-        </a>
+  <section class="hero" id="about">
+  
+    <div class="container about-grid">
+  
+      <!-- TEXT -->
+  
+      <div class="hero-content">
+  
+        <h1>About Me</h1>
+  
+        <h2>
+          Biomedical Engineering Student · Quantitative Biology Enthusiast · Builder
+        </h2>
+  
+        <p>
+          Hi! I'm Sahvir, a biomedical engineering student at UVA excited
+          about all things quantitative biology — computational biology,
+          systems modeling, transcriptomics, and more.
+        </p>
+  
+        <p>
+          I enjoy exploring how mathematical and computational approaches
+          can help us better understand complex biological systems,
+          especially signaling networks, cellular behavior, and disease.
+        </p>
+  
+        <p>
+          This website is a place for me to document projects, share ideas,
+          and showcase some of the things I've been learning and building
+          over the years.
+        </p>
+  
+        <div class="hero-buttons">
+  
+          <a class="btn btn-primary" href="#projects">
+            View Projects
+          </a>
+  
+          <a
+            class="btn btn-secondary"
+            href="https://github.com/Sahvir-Bhaskaruni"
+            target="_blank"
+          >
+            GitHub
+          </a>
+  
+        </div>
+  
       </div>
-
+  
+      <!-- IMAGE -->
+  
+      <div class="about-image">
+  
+        <img src="profile.jpg" alt="Profile picture">
+  
+      </div>
+  
     </div>
+  
   </section>
-
+  
   <!-- PROJECTS -->
 
   <section id="projects">
