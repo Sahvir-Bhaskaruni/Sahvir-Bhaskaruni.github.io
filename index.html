@@ -75,7 +75,7 @@
     /* HERO */
 
     .hero {
-      min-height: 4rem 0 2rem 0;
+      padding: 4rem 0 2rem 0;
       display: flex;
       align-items: center;
     }
@@ -238,6 +238,26 @@
       margin-bottom: 1rem;
     }
 
+    .project-card {
+      display: block;
+      cursor: pointer;
+    }
+    
+    .project-button {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.65rem 1rem;
+      border-radius: 10px;
+      background: rgba(217,119,6,0.15);
+      color: #FCD34D;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+    
+    .project-card:hover .project-button {
+      background: rgba(217,119,6,0.28);
+    }
+
     .tags {
       display: flex;
       flex-wrap: wrap;
@@ -289,7 +309,9 @@
 
   <nav>
     <div class="container nav-content">
-      <div class="logo">Sahvir Bhaskaruni</div>
+      <div class="logo">
+        <a href="index.html">Sahvir Bhaskaruni</a>
+      </div>
 
       <div class="nav-links">
         <a href="#about">About</a>
@@ -376,46 +398,42 @@
 
       <div class="projects-grid">
 
-        <div class="project-card">
+        <a href="hantavirus.html" class="project-card">
           <h3>Determining a Pan-Hantavirus CD4+ for Use in Vaccine Constructs</h3>
-
           <p>
             Identifying CD4+ epitopes to evaluate the potential to develop 
             a pan-hantavirus vaccine to elicit broad-spectrum immunity to 
-            hantavirus as a means of availing a public health threat. 
+            hantavirus as a means of availing a public health threat.
           </p>
-
           <div class="tags">
             <span class="tag">Immunoinformatics</span>
             <span class="tag">Public Health</span>
             <span class="tag">Vaccinology</span>
           </div>
-        </div>
-
-        <div class="project-card">
+          <span class="project-button">Read More →</span>
+        </a>
+      
+        <a href="pcdh1.html" class="project-card">
           <h3>Small Molecule PCDH1 Inhibitor Design</h3>
-
           <p>
             Identifying small molecule inhibitors of PCDH1 to serve as a
-            competitive inhibitor of PCDH1 - Andes orthohantavirus binding 
-            to contribute to developing a treatment. 
+            competitive inhibitor of PCDH1-Andes orthohantavirus binding 
+            to contribute to developing a treatment.
           </p>
-
           <div class="tags">
             <span class="tag">Molecular Docking</span>
             <span class="tag">Drug Design</span>
             <span class="tag">Medicinal Chemistry</span>
           </div>
-        </div>
-
-        <div class="project-card">
+          <span class="project-button">Read More →</span>
+        </a>
+      
+        <a href="igem.html" class="project-card">
           <h3>Virginia iGEM 2025</h3>
-
           <p>
             Led a team developing a biological device-assisted methodology 
-            to enhance bio-H2 production via. Dark Fermentation. 
+            to enhance bio-H2 production via dark fermentation.
           </p>
-
           <div class="tags">
             <span class="tag">Synthetic Biology</span>
             <span class="tag">Metabolic Engineering</span>
@@ -423,8 +441,9 @@
             <span class="tag">Bio-Energy</span>
             <span class="tag">iGEM</span>
           </div>
-        </div>
-
+          <span class="project-button">Read More →</span>
+        </a>
+      
       </div>
 
     </div>
