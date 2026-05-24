@@ -1,9 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>About | Sahvir Bhaskaruni</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" 
+    rel="stylesheet"
+  >
+
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -11,39 +21,181 @@
 
 <nav>
   <div class="container nav-content">
+
     <div class="logo">
-      <a href="index.html">Sahvir Bhaskaruni</a>
+      <a href="../index.html">Sahvir Bhaskaruni</a>
     </div>
 
     <div class="nav-links">
-      <a href="bio.html">About</a>
-      <a href="index.html#projects">Projects</a>
-      <a href="index.html#contact">Contact</a>
+
+      <div class="nav-item">
+        <a href="bio.html">About</a>
+        <div class="dropdown">
+          <a href="bio.html">Personal Bio</a>
+        </div>
+      </div>
+
+      <div class="nav-item">
+        <a href="../index.html#projects">Projects</a>
+        <div class="dropdown">
+          <a href="hantavirus.html">Pan-Hantavirus Vaccine</a>
+          <a href="pcdh1.html">PCDH1 Inhibitor Design</a>
+          <a href="igem.html">Virginia iGEM 2025</a>
+        </div>
+      </div>
+
+      <div class="nav-item">
+        <a href="../index.html#contact">Contact</a>
+        <div class="dropdown">
+          <a href="../index.html#contact">Email / GitHub / LinkedIn</a>
+        </div>
+      </div>
+
     </div>
+
   </div>
 </nav>
 
 <section class="page-section">
+
   <div class="container page-content">
+
     <h1>About Me</h1>
 
-    <p>
-      Hi! I'm Sahvir, a biomedical engineering student at UVA interested in
-      quantitative biology, computational biology, systems modeling,
-      synthetic biology, and transcriptomics.
+    <p class="page-intro">
+      Hi! I’m Sahvir, a biomedical engineering student at UVA interested in
+      computational biology, systems modeling, synthetic biology, and
+      transcriptomics.
     </p>
 
     <p>
-      I’m especially interested in how mathematical and computational tools
-      can help us better understand biological systems, from signaling networks
-      to cellular behavior and disease.
+      I’m drawn to problems where biology, mathematics, and computation
+      intersect. I enjoy thinking about biological systems as dynamic,
+      interconnected networks — from signaling pathways and cellular states
+      to engineered biological circuits.
+    </p>
+
+    <h2>Research Interests</h2>
+
+    <p>
+      My interests sit broadly within quantitative biology. I’m especially
+      interested in how computational and mathematical tools can help us
+      understand complex biological behavior, design better experiments, and
+      generate more interpretable biological hypotheses.
+    </p>
+
+    <div class="interest-tags">
+      <span class="interest-tag">Computational Biology</span>
+      <span class="interest-tag">Systems Biology</span>
+      <span class="interest-tag">Synthetic Biology</span>
+      <span class="interest-tag">Transcriptomics</span>
+      <span class="interest-tag">Biological Modeling</span>
+      <span class="interest-tag">Network Dynamics</span>
+      <span class="interest-tag">Quantitative Biology</span>
+      <span class="interest-tag">Multi-Scale Modeling</span>
+    </div>
+
+    <h2>Current Work</h2>
+
+    <div class="now-grid">
+
+      <div class="now-card">
+        <h3>Virginia iGEM 2025</h3>
+        <p>
+          I’m leading a synthetic biology project focused on enhancing
+          biohydrogen production through engineered biological systems.
+        </p>
+      </div>
+
+      <div class="now-card">
+        <h3>Systems Modeling</h3>
+        <p>
+          I’m interested in modeling signaling dynamics and understanding how
+          network structure shapes biological behavior.
+        </p>
+      </div>
+
+      <div class="now-card">
+        <h3>Transcriptomics</h3>
+        <p>
+          I’m exploring RNA-seq and single-cell analysis workflows to better
+          understand cellular states and disease-associated variation.
+        </p>
+      </div>
+
+    </div>
+
+    <h2>How I Think About Research</h2>
+
+    <p>
+      What excites me most is the ability to connect mechanism with data. I’m
+      interested in research that does not treat computation as separate from
+      biology, but instead uses models, experiments, and data analysis together
+      to ask better questions.
     </p>
 
     <p>
-      This page is a space to share more about my background, research interests,
-      projects, and what I’m learning along the way.
+      I’m particularly interested in systems where biological behavior emerges
+      from interactions between many components. Whether the system is a
+      signaling pathway, a microbial community, or a transcriptomic cell state,
+      I enjoy using quantitative approaches to make complexity more
+      understandable.
     </p>
+
+    <h2>Tools & Methods</h2>
+
+    <div class="tools-grid">
+
+      <div class="tool-card">
+        <h3>Computational</h3>
+        <p>
+          Python, MATLAB, R, RNA-seq workflows, single-cell analysis,
+          modeling, clustering, and data visualization.
+        </p>
+      </div>
+
+      <div class="tool-card">
+        <h3>Modeling</h3>
+        <p>
+          ODE models, systems biology models, signaling network dynamics,
+          parameter analysis, and biological simulation workflows.
+        </p>
+      </div>
+
+      <div class="tool-card">
+        <h3>Biological</h3>
+        <p>
+          Synthetic biology, molecular biology, assay design, wet-lab
+          collaboration, and experimental planning.
+        </p>
+      </div>
+
+    </div>
+
+    <h2>Outside the Lab</h2>
+
+    <p>
+      Outside of research, I enjoy building things, learning new tools, and
+      finding ways to communicate science more clearly. I also like projects
+      that combine technical depth with real-world impact.
+    </p>
+
+    <h2>Looking Ahead</h2>
+
+    <p>
+      Long-term, I hope to contribute to research at the intersection of
+      computational biology, systems modeling, and biological engineering.
+      I’m excited by work that uses quantitative methods to better understand,
+      predict, and eventually design biological systems.
+    </p>
+
+    <div class="page-buttons">
+      <a class="btn btn-primary" href="../index.html#projects">View Projects</a>
+      <a class="btn btn-secondary" href="../index.html#contact">Contact Me</a>
+    </div>
+
   </div>
+
 </section>
 
 <footer>
@@ -53,4 +205,4 @@
 </footer>
 
 </body>
-</html>
+</html>f
