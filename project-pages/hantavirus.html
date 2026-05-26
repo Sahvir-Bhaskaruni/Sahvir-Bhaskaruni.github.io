@@ -113,51 +113,76 @@
 
     <h2>Approach</h2>
 
-    <p>
-      An immunoinformatics workflow was developed to analyze 46 indexed
-      hantavirus genomes obtained from NIH GenBank.
-    </p>
+  <p>
+    An immunoinformatics workflow was developed to identify conserved
+    candidate CD4+ epitopes across indexed hantavirus genomes.
+  </p>
 
-    <p>
-      The workflow included:
-    </p>
+  <div class="flowchart">
 
-    <ul>
+    <div class="flow-step">
+      <div class="flow-number">1</div>
+      <h3>Genome Acquisition</h3>
+      <p>
+        Collection of indexed hantavirus genomes from NIH GenBank.
+      </p>
+    </div>
 
-      <li>
-        Multiple sequence alignment of hantavirus genomes
-      </li>
+    <div class="flow-arrow">↓</div>
 
-      <li>
-        Identification of conserved protein regions
-      </li>
+    <div class="flow-step">
+      <div class="flow-number">2</div>
+      <h3>Sequence Alignment</h3>
+      <p>
+        Multiple sequence alignment to identify conserved regions 
+        across species using NCBI COBALT.
+      </p>
+    </div>
 
-      <li>
-        Isolation of candidate 11+ mer epitopes
-      </li>
+    <div class="flow-arrow">↓</div>
 
-      <li>
-        Prediction of MHC-II binding capacity
-      </li>
+    <div class="flow-step">
+      <div class="flow-number">3</div>
+      <h3>Epitope Isolation</h3>
+      <p>
+        Isolation of candidate 11+ mer conserved peptide sequences 
+        using EMBOSS cons.
+      </p>
+    </div>
 
-      <li>
-        Antigenicity screening
-      </li>
+    <div class="flow-arrow">↓</div>
 
-      <li>
-        Allergenicity prediction
-      </li>
+    <div class="flow-step">
+      <div class="flow-number">4</div>
+      <h3>MHC-II Binding Prediction</h3>
+      <p>
+        Computational prediction of CD4+ MHC-II binding potential 
+        using the Immune Epitope Database Tools.
+      </p>
+    </div>
 
-      <li>
-        Toxicity prediction
-      </li>
+    <div class="flow-arrow">↓</div>
 
-    </ul>
+    <div class="flow-step">
+      <div class="flow-number">5</div>
+      <h3>Epitope Filtering</h3>
+      <p>
+        Screening for antigenicity, allergenicity, and toxicity
+        using VaxiJen V.2.0, AllerTop V.2.0, and ToxinPred.
+      </p>
+    </div>
 
-    <p>
-      Candidate epitopes were filtered based on predicted immunogenicity,
-      safety, and conservation across hantavirus species.
-    </p>
+    <div class="flow-arrow">↓</div>
+
+    <div class="flow-step">
+      <div class="flow-number">6</div>
+      <h3>Candidate Selection</h3>
+      <p>
+        Selection of conserved candidate epitopes for downstream analysis.
+      </p>
+    </div>
+
+  </div>
 
     <h2>Results</h2>
 
