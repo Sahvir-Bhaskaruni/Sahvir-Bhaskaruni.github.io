@@ -424,3 +424,30 @@ footer {
   flex-wrap: wrap;
   margin-top: 2.5rem;
 }
+
+.project-subtitle {
+  font-size: 1.15rem;
+  color: #cbd5e1;
+  margin-bottom: 1.25rem;
+}
+
+.project-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+
+  margin-bottom: 2.5rem;
+}
+
+.meta-tag {
+  padding: 0.55rem 0.9rem;
+
+  border-radius: 999px;
+
+  background: rgba(217,119,6,0.15);
+
+  color: #FCD34D;
+
+  font-size: 0.9rem;
+  font-weight: 500;
+}
