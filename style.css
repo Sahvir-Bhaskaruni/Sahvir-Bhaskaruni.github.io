@@ -624,3 +624,32 @@ footer {
 
   color: #e2e8f0;
 }
+
+.page-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.content-box {
+  width: 100%;
+  max-width: 850px;
+  margin: 1.5rem 0 2.5rem 0;
+  padding: 2rem;
+
+  background: #1E293B;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 20px;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.18);
+}
+
+.content-box p {
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.figure-card,
+.table-card {
+  max-width: 850px;
+  margin: 1.5rem 0 2.5rem 0;
+}
