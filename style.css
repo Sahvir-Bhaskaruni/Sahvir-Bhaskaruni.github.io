@@ -486,7 +486,9 @@ section {
 .figure-card img {
   display: block;
   width: 100%;
-  height: auto;
+  max-height: 520px;
+  object-fit: contain;
+  background: #1E293B;
 }
 
 .sequence-table {
