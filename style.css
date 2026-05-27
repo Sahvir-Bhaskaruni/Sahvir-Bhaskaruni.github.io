@@ -589,4 +589,20 @@ footer {
   }
 }
 
+.highlight-conserved {
+  color: #FCD34D;
+  font-weight: 700;
+  background: rgba(217,119,6,0.14);
+  padding: 0.08rem 0.2rem;
+  border-radius: 4px;
+}
+
+.highlight-epitope {
+  color: #93C5FD;
+  font-weight: 700;
+  background: rgba(59,130,246,0.18);
+  padding: 0.08rem 0.2rem;
+  border-radius: 4px;
+}
+
 /* rebuild */
