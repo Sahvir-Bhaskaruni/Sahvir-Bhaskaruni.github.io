@@ -835,3 +835,23 @@ footer {
     font-size: 1.3rem;
   }
 }
+
+.image-cell {
+  text-align: center;
+  padding: 0.75rem;
+  vertical-align: middle;
+}
+
+.image-cell img {
+  max-width: 100%;
+  width: auto;
+  height: 200px;  /* Set explicit height for rowspan images */
+  object-fit: contain;  /* Keep aspect ratio, don't stretch */
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-light);
+  transition: transform var(--transition-fast);
+}
+
+.image-cell img:hover {
+  transform: scale(1.05);
+}
