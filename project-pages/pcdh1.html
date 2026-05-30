@@ -50,16 +50,421 @@
 
   </div>
 </nav>
-
 <section class="page-section">
   <div class="container page-content">
-    <h1>Small Molecule PCDH1 Inhibitor Design</h1>
+    <h1>
+      Small Molecule PCDH1 Inhibitor Design
+    </h1>
+
+    <p class="project-subtitle">
+      <i>In Silico</i> Design of a Small Molecule PCDH1 Inhibitor 
+      to Combat Andes Orthohantavirus Infection
+    </p>
+
+    <div class="project-meta">
+
+      <span class="meta-tag">
+        Drug Discovery
+      </span>
+
+      <span class="meta-tag">
+        Molecular Docking
+      </span>
+
+      <span class="meta-tag">
+        Structural Biology
+      </span>
+
+      <span class="date-tag">
+        2022
+      </span>
+
+    </div>
+
+    <h2>Project Motivation</h2>
+
+    <div class="content-box">
+
+      <p>
+        The Andes orthohantavirus (ANDV) is a strain of hantavirus responsible for 
+        Hantavirus Cardiopulmonary Syndrome (HCPS), a severe respiratory disease 
+        with a mortality rate estimated between 35–50%. Despite its high lethality, there 
+        are currently no FDA-approved therapeutics specifically targeting ANDV infection.
+      </p>
+
+      <p>
+        This project explored the feasibility of designing a small molecule inhibitor 
+        targeting Protocadherin-1 (PCDH1), a host receptor implicated in ANDV cell entry. 
+        By computationally mimicking aspects of the ANDV–PCDH1 interaction, this work aimed 
+        to identify candidate molecules capable of disrupting viral binding through molecular 
+        docking and structural analysis approaches.
+      </p>
+    
+    </div>
+
+    <h2>My Role</h2>
+
+    <div class="content-box">
 
     <p>
-      Webpage in Progress
+     This was an independent research project conducted under the mentorship of 
+     Dr. Cian Desai through the Polygence research program.
     </p>
+
+    <p>
+      My work focused on literature review and background research, molecular
+      construction and structure modification, molecular docking and conformational 
+      analysis, data analysis and candidate evaluation.
+    </p>
+  
+    </div>
+
+    <h2>Approach</h2>
+
+  <p>
+    A computational workflow was developed to evaluate candidate inhibitor molecules 
+    and their potential interactions with PCDH1. Molecules were constructed and 
+    modified using PyMOL, while structural analysis and visualization were performed 
+    using UCSF ChimeraX and ChemDoodle.
+  </p>
+
+  <div class="flowchart">
+
+    <div class="flow-step">
+      <div class="flow-number">1</div>
+      <h3>Identification of Candidate Binding Motifs</h3>
+      <p>
+        Candidate molecular backbones were designed around predicted 2–3 amino acid 
+        binding domains involved in the ANDV–PCDH1 interaction.
+      </p>
+    </div>
+
+    <div class="flow-arrow">↓</div>
+
+    <div class="flow-step">
+      <div class="flow-number">2</div>
+      <h3>Functional Group Optimization</h3>
+      <p>
+        Oxygen- and nitrogen-containing substitutions were introduced and 
+        evaluated to assess their impact on predicted intermolecular 
+        interactions and conformational stability.
+      </p>
+    </div>
+
+    <div class="flow-arrow">↓</div>
+
+    <div class="flow-step">
+      <div class="flow-number">3</div>
+      <h3>Drug-Likeness Optimization</h3>
+      <p>
+        Additional structural modifications were introduced while considering 
+        Lipinski’s Rule of Five to maintain properties consistent with 
+        oral drug-likeness.
+      </p>
+    </div>
+
+    <div class="flow-arrow">↓</div>
+
+    <div class="flow-step">
+      <div class="flow-number">4</div>
+      <h3>MHC-II Binding Prediction</h3>
+      <p>
+        Candidate compounds were evaluated based on: 1) molecular weight, 
+        2) predicted LogP, 3) post-docking conformation changes, 
+        4) putative receptor–ligand interactions, and 5) &delta;G 
+        binding affinities. 
+      </p>
+    </div>
+
   </div>
+
+   <h2>Results</h2>
+
+    <div class="content-box">
+
+      <p>
+        The computational screen evaluated approximately 30 candidate 
+        compounds, of which 11 demonstrated favorable docking or 
+        conformational characteristics warranting further investigation.
+      </p>
+
+    </div>
+
+<!-- FIGURE 1 -->
+
+<div class="figure-card">
+
+  <img
+    src=""
+    alt="Multiple sequence alignment of hantavirus genomes"
+  >
+
+  <p class="figure-caption">
+    <strong>Figure 1.</strong>
+    TBD
+  </p>
+
+</div>
+
+<!-- FIGURE 2 -->
+
+<div class="table-card">
+
+
+  <table class="sequence-table">
+
+    <thead>
+      <tr>
+        <th>Conserved Sequence</th>
+      </tr>
+    </thead>
+
+    <tbody>
+
+      <tr>
+        <td class="sequence-cell">
+        
+        xxxxxxxxxxxlxLLxVLxxvxxxxxxxx<span class="highlight-conserved">RNVYELKLECPHTV</span>xxxxGExxxxxxxxxVxGSVELPxIxLxEVxxxxxxSLKxIESSCNFDIHxSxxxxQxFTQVtWxKKAdxxxTxNASSTTFExxSsEVNLKGxxxxxxxLxxxxxCVIxxxIIExxxKxxxx<span class="highlight-conserved">RKTVICYDLSCNQT</span>xx<span class="highlight-conserved">CKPTLHLIAPI</span>xxxxxxxxxCxxMKSCLIxLGxxxxxxxxxxxxxx<span class="highlight-conserved">RIQVVYEKTYCVGML</span>xVEGKxCFxPxxTLxxxxxxxxxxxxSxxxxxxxxxxxxxxxxxxYDvxxxxxxxxxxxxTLPVxCFLxxxIaKKxxxxxxxxxxxxxxxxxxxxxxKIxExlEKIxxxxxkxxCTxxxxxENxxQGYYVCxIGxNSExIxVPSxDDxRSxExxIxxxxLSrMxxSPHGEDHxxxxxxDxxxxxxxSLRIAGxxxxIExxxxxKVxPxTESSDxLxxxQGIAFSGxPMYSSLxxSVLxKxDPxxKYVFSPGIIxxxxxPxxNxSxxxxxxxxxCDKKxLPLTWTGYxxIxIPGxxEKIxxxxxxxxxxx<span class="highlight-conserved">CTVFCTLSGPGASCEAYSE</span>xxxxxxx<span class="highlight-conserved">GIFNISSPTCLVNK</span>xxRFRbSEQQIxFVCQRxxxxxxxxVDxDIVVYCxx<span class="highlight-conserved">NGQKKVILTKTLVIGQCIYT</span>xTSLFSLLPx<span class="highlight-conserved">VAHSLAVELCVPG</span>x<span class="highlight-epitope">HGWATIALLITFCFGWLLIP</span>xITxIILKIxxxLKxIxxIxxxxxYNxESKFKx<span class="highlight-conserved">ILEKIKEEYQKTMGSMVCDVC</span>xxxxxxxxxxxKHECETx<span class="highlight-conserved">KELKAHKKSCPQGQCPYCM</span>xxxExTESALQAHYKxVCKLTxxRFQEDLKKSIxxxxxxQxxGCx<span class="highlight-conserved">YRTLNIFRYKSRCYI</span>xxVWIILLx<span class="highlight-conserved">IEsIIWAASAE</span>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxLEPxWNDxAxxxxxxxxxxxxxxxxxxxxxxxxHGVGxIPMxTDLELDFSLxxxxxxxxxxxxSSSxYTYRRKLxNPxNEEExIpFxHIQIEKQVIxAEVQxLGHWMDAxxxx<span class="highlight-conserved">NIKTAFHCYGAC</span>xxKYSYPWQTAxxxxxxxxCxFEKDYQYETxWGCNPxDxCPGVxxxxxxGTGCTACxGIYLDKLKxxxxxSVGx<span class="highlight-conserved">AYKIISLKYTRKVCVQLG</span>xExxCKxIDSNDxxxxxxxCLVTx<span class="highlight-conserved">NVKVCMIGTVSKF</span>xxQx<span class="highlight-conserved">GDTLLFLGPLE</span>xGGLIx<span class="highlight-conserved">KQWCTTTCQFGDPGDIMS</span>xxNxGxxCPEYxGSFRKKCxFATTPVCEYxGNx<span class="highlight-conserved">VSGYKRMMATKDSFQSFNVTD</span>xHxTxNKxxxxxxxxxxxxxLEWxDxxxxxxxxPDGxLRDHINIVVNxxxxxRDIxFxxxxxxxxxxxEDLSENPCKVxLqTx<span class="highlight-conserved">SIEGAWGSGVGFTLtC</span>xVSLTECSxxTFLTSIKACDxxx<span class="highlight-conserved">AMCYGATSVTLVRGQN</span>xTVxVxGKGGHSGSxxxxxkFKCCHDxDCSxxGLLASAPxxxxxxHLDRVTGx<span class="highlight-conserved">NQIDNDKVYDDGAPeCGI</span>xCWFxKSGEWLmGILx<span class="highlight-epitope">NGNWMVVVVLIVILIISIIL</span>xSfLCPVRKxKKxxxxxxxxxxxxxxxxxxxx
+        
+        </td>
+      </tr>
+
+    </tbody>
+
+  </table>
+
+<p class="figure-caption">
+  <strong>Figure 2.</strong>
+  TBD
+</p>
+
+</div>
+
+<!-- FIGURE 3 -->
+
+<div class="table-card">
+
+  <table class="sequence-table">
+
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Sequence</th>
+        <th>MHC-II Binding</th>
+        <th>IFN-&gamma; Binding</th>
+        <th>Antigenicity</th>
+      </tr>
+    </thead>
+
+    <tbody>
+
+      <tr>
+        <td>R23</td>
+        <td class="sequence-cell">WMVVVVLVVILIISI</td>
+        <td>15.36</td>
+        <td>0.5503569</td>
+        <td>0.7584</td>
+      </tr>
+
+      <tr>
+        <td>R24</td>
+        <td class="sequence-cell">MVVVVLVVILIISII</td>
+        <td>14.44</td>
+        <td>0.70655736</td>
+        <td>0.5976</td>
+      </tr>
+
+      <tr>
+        <td>R25</td>
+        <td class="sequence-cell">VVVVLVVILIISIIL</td>
+        <td>8.714</td>
+        <td>0.83196286</td>
+        <td>0.5386</td>
+      </tr>
+
+      <tr>
+        <td>W35</td>
+        <td class="sequence-cell">HGWATIALLITFCFG</td>
+        <td>32.8</td>
+        <td>0.48341312</td>
+        <td>0.5922</td>
+      </tr>
+
+      <tr>
+        <td>W36</td>
+        <td class="sequence-cell">GWATIALLITFCFGW</td>
+        <td>36.2</td>
+        <td>0.86239409</td>
+        <td>1.0371</td>
+      </tr>
+
+      <tr>
+        <td>W37</td>
+        <td class="sequence-cell">WATIALLITFCFGWL</td>
+        <td>33.18</td>
+        <td>0.55717861</td>
+        <td>0.9842</td>
+      </tr>
+
+      <tr>
+        <td>W38</td>
+        <td class="sequence-cell">ATIALLITFCFGWLL</td>
+        <td>33.18</td>
+        <td>0.55775663</td>
+        <td>0.7756</td>
+      </tr>
+
+      <tr>
+        <td>W39</td>
+        <td class="sequence-cell">TIALLITFCFGWLLI</td>
+        <td>37.78</td>
+        <td>0.74836939</td>
+        <td>0.8847</td>
+      </tr>
+
+      <tr>
+        <td>W40</td>
+        <td class="sequence-cell">IALLITFCFGWLLIP</td>
+        <td>39.78</td>
+        <td>0.66385574</td>
+        <td>0.8248</td>
+      </tr>
+
+    </tbody>
+
+  </table>
+
+<p class="figure-caption">
+  <strong>Figure 3.</strong>
+  Candidate conserved CD4+ epitopes following computational filtering.
+</p>
+
+</div>
+
+  <h2>Discussion & Limitations</h2>
+  
+  <div class="content-box">
+  
+    <p>
+      This work represents a small-scale pilot study compared to traditional 
+      high-throughput drug discovery pipelines, which often screen libraries containing 
+      tens of thousands of compounds. Howevere, the identification of multiple promising 
+      candidates from a limited set of molecules suggests that additional viable inhibitors 
+      may exist within broader chemical space.
+    </p>
+
+    <p>
+      Several limitations are important to acknowledge. First, <i>in silico</i> docking 
+      approaches provide only an approximation of molecular behavior and cannot directly 
+      predict therapeutic efficacy or potency. Additionally, evaluating receptor–ligand 
+      interactions primarily through conformational change offers an incomplete representation 
+      of the biological system, particularly because these simulations do not fully account 
+      for membrane anchoring effects, intracellular signaling interactions, or dynamic 
+      cellular environments.
+    </p>
+
+    <p>
+      Another major consideration is the potential for off-target effects. Because PCDH1 
+      plays roles in cellular adhesion and tissue organization, systemic inhibition may 
+      produce unintended physiological consequences. Ultimately, extensive <i>in vitro</i> and 
+      <i>in vivo</i> validation would be required to evaluate binding specificity, toxicity, 
+      pharmacokinetics, absorption and metabolism, and therapeutic efficacy. 
+    </p>
+  
+  </div>
+
+    <h2>Future Directions</h2>
+
+    <div class="content-box">
+
+    <p>
+      Future work should begin with expanded in silico screening across a substantially 
+      larger compound library to identify additional high-affinity candidates. From there, 
+      high-throughput screening (HTS) and experimental validation assays could be used to 
+      prioritize molecules for deeper characterization. These would include cell-based viral 
+      inhibition assays, toxicity and off-target evaluation, animal model testing, and 
+      pharmacokinetic evaluation.
+    </p>
+
+    <p>
+      Because HCPS remains a relatively rare disease, clinical translation may also face 
+      logistical challenges related to trial enrollment and therapeutic development incentives.
+    </p>
+
+    </div>
+
+    <h2>Reflection</h2>
+
+    <div class="content-box">
+
+    <p>
+      This project introduced me to the growing role of computational tools in therapeutic 
+      discovery and gave me hands-on experience navigating molecular modeling workflows. 
+      More importantly, it taught me to critically evaluate the limitations of computational 
+      biology methods and to avoid overstating biological conclusions from purely <i>in silico</i> results.
+    </p>
+
+    <p>
+      Through this experience, I developed a greater appreciation for the balance between computational 
+      prediction and experimental validation in modern drug development.
+    </p>
+
+    </div>
+
+<h2>Selected References</h2>
+
+<div class="content-box">
+
+  <ul class="reference-list">
+
+    <li>
+    
+      Centers for Disease Control and Prevention (2024).
+    
+      <a
+        href="https://www.cdc.gov/hantavirus/about/index.html"
+        target="_blank"
+      >
+        <u>About Hantavirus</u>
+      </a>
+    
+    </li>
+
+    <li>
+      Kim, W. K. et al. (2016). Genetic diversity and reassortment of Hantaan virus tripartite RNA genomes in nature, the Republic of Korea.
+      <a
+        href="https://doi.org/10.1371/journal.pntd.0004650"
+        target="_blank"
+      >
+        <u>DOI</u>
+    </li>
+    
+    <li>
+      Liu, X. et al. (2020). Vaccine and Therapeutics against Hantaviruses.
+        <a
+          href="https://doi.org/10.3389/fmicb.2019.02989"
+          target="_blank"
+        >
+          <u>DOI</u>
+    </li>
+
+    <li>
+      Ramsden, C. et al. (2008). High Rates of Molecular Evolution in Hantaviruses.
+      <a
+        href="https://doi.org/10.1093/molbev/msn093"
+        target="_blank"
+      >
+        <u>DOI</u>
+    </li>
+
+  </ul>
+
+</div>
+
+</div>
+
 </section>
+
 
 <footer>
   <div class="container">
