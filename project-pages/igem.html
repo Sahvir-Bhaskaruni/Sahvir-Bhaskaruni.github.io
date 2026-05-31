@@ -45,9 +45,453 @@
   <div class="container page-content">
     <h1>Virginia iGEM 2025</h1>
 
-    <p>
-      Webpage in Progess 
+    <p class="project-subtitle">
+      A team project focused on engineering a synthetic biology-assisted system for improved 
+      biohydrogen production through dark fermentation.
     </p>
+
+    <div class="project-meta">
+
+      <span class="meta-tag">
+        Synthetic Biology
+      </span>
+
+      <span class="meta-tag">
+        Metabolic Engineering
+      </span>
+
+      <span class="meta-tag">
+        Multi-Scale Modeling
+      </span>
+
+      <span class="meta-tag">
+        Bio-Energy
+      </span>
+
+      <span class="meta-tag">
+        iGEM
+      </span>
+
+      <span class="date-tag">
+        2025-2026
+      </span>
+
+    </div>
+
+    <h2>Project Motivation</h2>
+
+    <div class="content-box">
+
+      <p>
+      As fossil fuel consumption continues to increase, so do its environmental 
+      and economic consequences. To support the transition toward a more sustainable 
+      energy future, alternative energy sources capable of powering industry and 
+      transportation at scale must be developed. Hydrogen (H<sub>2</sub>) has strong potential 
+      as a sustainable, energy-dense fuel; however, many current production methods 
+      remain inefficient, expensive, or environmentally costly.
+      </p>
+      <p>
+      One promising alternative is dark fermentation, a biological process in which 
+      microorganisms convert organic waste into hydrogen gas. While dark fermentation 
+      offers a potentially sustainable route for biohydrogen production, the process 
+      is often limited by competing microbial activity that reduces hydrogen yield 
+      and increases methane production.
+      </p>
+
+      <p>
+      This project explored the use of synthetic biology to improve biohydrogen production 
+      by engineering a biological device (the Cysteinator) capable of modulating the 
+      microbial environment within dark fermentation systems. Our approach focused on 
+      reducing the oxidative-reductive potential of organic waste environments through 
+      controlled L-cysteine secretion, creating conditions more favorable for H2-producing 
+      bacteria while suppressing competing microbial processes.
+      </p>
+    
+    </div>
+
+    <h2>My Role</h2>
+
+    <div class="content-box">
+
+    <p>
+      This was a team project for nine undergraduates from the University 
+      of Virginia who comprised the Virginia iGEM 2025 team. I was the <b>team 
+      lead</b> and was involved in the planning and execution of every step of 
+      the project. I was particularly involved in formulating the modeling 
+      strategy and integrating our wet lab and modeling capabilities. More 
+      detailed attributions for all of the team members can be found at the 
+      link <a href="https://2025.igem.wiki/virginia/attributions" target="_blank">
+      <u>here</u>
+      </a>.   
+    </p>
+  
+    </div>
+
+    <h2>Approach</h2>
+
+    <p>
+      Our projected methodology focused on designing and validating sustainability 
+      through multiple lenses. Below is a diagram of our proposed biological-device 
+      integration. 
+    </p>
+
+  <div class="flowchart">
+
+    <div class="flow-step">
+      <div class="flow-number">1</div>
+      <h3>Part 1: Dark Fermentation + the Cysteinator</h3>
+      <p>figure to come</p>
+      <p>
+        The Cysteinator is designed to secrete L-Cysteine until a certain 
+        concentration into the environment. This reduces the oxidative-reductive 
+        potential of the organic matter environment, allowing only the H2-producing 
+        bacteria to thrive. 
+      </p>
+    </div>
+
+    <div class="flow-arrow">↓</div>
+
+    <div class="flow-step">
+      <div class="flow-number">2</div>
+      <h3>Part 2: the Cysteinator</h3>
+      <p>figure to come</p>
+      <p>
+        As different organic matter environments have different H2 producing
+        bacteria and are subject to different environmental conditions the team 
+        integrated modularity into the circuitry so that the device can be customized 
+        to the environment. 
+      </p>
+    </div>
+
+    <div class="flow-arrow">↓</div>
+
+    <div class="flow-step">
+      <div class="flow-number">3</div>
+      <h3>Part 3: Multi-Scale Model</h3>
+      <p>figure to come</p>
+      <p>
+        In order to accurately modulate the device, we developed a multi-scale 
+        model that is able to factor both environmental conditions and reflect 
+        novel genetic circuitry into actionable mechanistic insights. 
+      </p>
+    </div>
+
+    <div class="flow-arrow">↓</div>
+
+    <div class="flow-step">
+      <div class="flow-number">4</div>
+      <h3>Part 4: Model - Device Interface</h3>
+      <p>figure to come</p>
+      <p>
+        To minimize the impact of assumptions made during model constructions
+        a Bayesian sampler and mean squared error cost function will be used 
+        to calibrate the model to experimental data. These insights can be used
+        to iteratively improve device construction and the model.  
+      </p>
+    </div>
+
+  </div>
+
+   <h2>Results</h2>
+
+    <div class="content-box">
+
+      <p>
+        Below are the results from our model, and included is a 
+        Techno-Economic Analysis (TEA) and Life-Cycle Assessment 
+        (LCA) to validate our design choices. 
+      </p>
+
+    </div>
+
+<!-- FIGURE 1 -->
+
+<div class="figure-card">
+
+  <img
+    src="../images/MSA_final.png"
+    alt="Multiple sequence alignment of hantavirus genomes"
+  >
+
+  <p class="figure-caption">
+    <strong>Figure 1.</strong>
+    Multiple sequence alignment of indexed hantavirus genomes used
+    to identify conserved regions across hantavirus species.
+  </p>
+
+</div>
+
+<!-- FIGURE 2 -->
+
+<div class="table-card">
+
+
+  <table class="sequence-table">
+
+    <thead>
+      <tr>
+        <th>Conserved Sequence</th>
+      </tr>
+    </thead>
+
+    <tbody>
+
+      <tr>
+        <td class="sequence-cell">
+        
+        xxxxxxxxxxxlxLLxVLxxvxxxxxxxx<span class="highlight-conserved">RNVYELKLECPHTV</span>xxxxGExxxxxxxxxVxGSVELPxIxLxEVxxxxxxSLKxIESSCNFDIHxSxxxxQxFTQVtWxKKAdxxxTxNASSTTFExxSsEVNLKGxxxxxxxLxxxxxCVIxxxIIExxxKxxxx<span class="highlight-conserved">RKTVICYDLSCNQT</span>xx<span class="highlight-conserved">CKPTLHLIAPI</span>xxxxxxxxxCxxMKSCLIxLGxxxxxxxxxxxxxx<span class="highlight-conserved">RIQVVYEKTYCVGML</span>xVEGKxCFxPxxTLxxxxxxxxxxxxSxxxxxxxxxxxxxxxxxxYDvxxxxxxxxxxxxTLPVxCFLxxxIaKKxxxxxxxxxxxxxxxxxxxxxxKIxExlEKIxxxxxkxxCTxxxxxENxxQGYYVCxIGxNSExIxVPSxDDxRSxExxIxxxxLSrMxxSPHGEDHxxxxxxDxxxxxxxSLRIAGxxxxIExxxxxKVxPxTESSDxLxxxQGIAFSGxPMYSSLxxSVLxKxDPxxKYVFSPGIIxxxxxPxxNxSxxxxxxxxxCDKKxLPLTWTGYxxIxIPGxxEKIxxxxxxxxxxx<span class="highlight-conserved">CTVFCTLSGPGASCEAYSE</span>xxxxxxx<span class="highlight-conserved">GIFNISSPTCLVNK</span>xxRFRbSEQQIxFVCQRxxxxxxxxVDxDIVVYCxx<span class="highlight-conserved">NGQKKVILTKTLVIGQCIYT</span>xTSLFSLLPx<span class="highlight-conserved">VAHSLAVELCVPG</span>x<span class="highlight-epitope">HGWATIALLITFCFGWLLIP</span>xITxIILKIxxxLKxIxxIxxxxxYNxESKFKx<span class="highlight-conserved">ILEKIKEEYQKTMGSMVCDVC</span>xxxxxxxxxxxKHECETx<span class="highlight-conserved">KELKAHKKSCPQGQCPYCM</span>xxxExTESALQAHYKxVCKLTxxRFQEDLKKSIxxxxxxQxxGCx<span class="highlight-conserved">YRTLNIFRYKSRCYI</span>xxVWIILLx<span class="highlight-conserved">IEsIIWAASAE</span>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxLEPxWNDxAxxxxxxxxxxxxxxxxxxxxxxxxHGVGxIPMxTDLELDFSLxxxxxxxxxxxxSSSxYTYRRKLxNPxNEEExIpFxHIQIEKQVIxAEVQxLGHWMDAxxxx<span class="highlight-conserved">NIKTAFHCYGAC</span>xxKYSYPWQTAxxxxxxxxCxFEKDYQYETxWGCNPxDxCPGVxxxxxxGTGCTACxGIYLDKLKxxxxxSVGx<span class="highlight-conserved">AYKIISLKYTRKVCVQLG</span>xExxCKxIDSNDxxxxxxxCLVTx<span class="highlight-conserved">NVKVCMIGTVSKF</span>xxQx<span class="highlight-conserved">GDTLLFLGPLE</span>xGGLIx<span class="highlight-conserved">KQWCTTTCQFGDPGDIMS</span>xxNxGxxCPEYxGSFRKKCxFATTPVCEYxGNx<span class="highlight-conserved">VSGYKRMMATKDSFQSFNVTD</span>xHxTxNKxxxxxxxxxxxxxLEWxDxxxxxxxxPDGxLRDHINIVVNxxxxxRDIxFxxxxxxxxxxxEDLSENPCKVxLqTx<span class="highlight-conserved">SIEGAWGSGVGFTLtC</span>xVSLTECSxxTFLTSIKACDxxx<span class="highlight-conserved">AMCYGATSVTLVRGQN</span>xTVxVxGKGGHSGSxxxxxkFKCCHDxDCSxxGLLASAPxxxxxxHLDRVTGx<span class="highlight-conserved">NQIDNDKVYDDGAPeCGI</span>xCWFxKSGEWLmGILx<span class="highlight-epitope">NGNWMVVVVLIVILIISIIL</span>xSfLCPVRKxKKxxxxxxxxxxxxxxxxxxxx
+        
+        </td>
+      </tr>
+
+    </tbody>
+
+  </table>
+
+<p class="figure-caption">
+  <strong>Figure 2.</strong>
+  Conserved protein sequence identified across indexed hantavirus genomes. 11+ mers 
+  highlighted in orange. Origin of relevant epitopes highlighted in blue.  
+</p>
+
+</div>
+
+<!-- FIGURE 3 -->
+
+<div class="table-card">
+
+  <table class="sequence-table">
+
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Sequence</th>
+        <th>MHC-II Binding</th>
+        <th>IFN-&gamma; Binding</th>
+        <th>Antigenicity</th>
+      </tr>
+    </thead>
+
+    <tbody>
+
+      <tr>
+        <td>R23</td>
+        <td class="sequence-cell">WMVVVVLVVILIISI</td>
+        <td>15.36</td>
+        <td>0.5503569</td>
+        <td>0.7584</td>
+      </tr>
+
+      <tr>
+        <td>R24</td>
+        <td class="sequence-cell">MVVVVLVVILIISII</td>
+        <td>14.44</td>
+        <td>0.70655736</td>
+        <td>0.5976</td>
+      </tr>
+
+      <tr>
+        <td>R25</td>
+        <td class="sequence-cell">VVVVLVVILIISIIL</td>
+        <td>8.714</td>
+        <td>0.83196286</td>
+        <td>0.5386</td>
+      </tr>
+
+      <tr>
+        <td>W35</td>
+        <td class="sequence-cell">HGWATIALLITFCFG</td>
+        <td>32.8</td>
+        <td>0.48341312</td>
+        <td>0.5922</td>
+      </tr>
+
+      <tr>
+        <td>W36</td>
+        <td class="sequence-cell">GWATIALLITFCFGW</td>
+        <td>36.2</td>
+        <td>0.86239409</td>
+        <td>1.0371</td>
+      </tr>
+
+      <tr>
+        <td>W37</td>
+        <td class="sequence-cell">WATIALLITFCFGWL</td>
+        <td>33.18</td>
+        <td>0.55717861</td>
+        <td>0.9842</td>
+      </tr>
+
+      <tr>
+        <td>W38</td>
+        <td class="sequence-cell">ATIALLITFCFGWLL</td>
+        <td>33.18</td>
+        <td>0.55775663</td>
+        <td>0.7756</td>
+      </tr>
+
+      <tr>
+        <td>W39</td>
+        <td class="sequence-cell">TIALLITFCFGWLLI</td>
+        <td>37.78</td>
+        <td>0.74836939</td>
+        <td>0.8847</td>
+      </tr>
+
+      <tr>
+        <td>W40</td>
+        <td class="sequence-cell">IALLITFCFGWLLIP</td>
+        <td>39.78</td>
+        <td>0.66385574</td>
+        <td>0.8248</td>
+      </tr>
+
+    </tbody>
+
+  </table>
+
+<p class="figure-caption">
+  <strong>Figure 3.</strong>
+  Candidate conserved CD4+ epitopes following computational filtering.
+</p>
+
+</div>
+
+  <h2>Discussion & Limitations</h2>
+  
+  <div class="content-box">
+  
+    <p>
+      The computational workflow successfully identified 9 candidate
+      conserved CD4+ epitopes that satisfied filtering criteria for
+      predicted MHC-II binding, antigenicity, allergenicity, and toxicity.
+      These findings initially suggested that conserved regions capable
+      of supporting broad-spectrum hantavirus vaccine design may exist
+      across multiple hantavirus species. 
+    </p>
+
+    <p>
+      However, subsequent analysis revealed that the majority of the 
+      conserved candidate sequences were localized within highly hydrophobic 
+      transmembrane regions associated with the viral glycoprotein and 
+      membrane interface. While these regions demonstrated strong sequence 
+      conservation, their hydrophobicity and membrane localization likely 
+      limit both synthesis feasibility and practical immunogenicity <i>in vivo</i>.
+    </p>
+
+    <p>
+      The location of the conserved sequences indicate that there is significant 
+      heterogeneity in glycoprotein structure, and that broad-spectrum 
+      vaccination is likely only possible for a smaller subset of hantaviruses. 
+      Vaccine efficacy is highly dependent on MHC-II and IFN-&gamma; binding 
+      strength and an inability to find epitopes closer to the binding region 
+      indicate that a multi-epitope based vaccination strategy may not be the 
+      most effective. 
+    </p>
+  
+  </div>
+
+    <h2>Future Directions</h2>
+
+    <div class="content-box">
+
+    <p>
+      Future work could focus on analyzing a more targeted set of clinically
+      relevant hantavirus strains and evaluating whether functionally
+      important viral motifs associated with infection could serve as more
+      effective vaccine targets.
+    </p>
+
+    <p>
+      Additional investigation into the evolutionary dynamics and potential
+      recombination patterns among hantavirus species may also help clarify
+      the specific public health threats that may arise. This work could 
+      then be used to more effectively inform what defines a clinically 
+      relevant hantavirus strain. 
+    </p>
+
+    </div>
+
+    <h2>Reflection</h2>
+
+    <div class="content-box">
+
+    <p>
+      This project was my first major introduction to scientific research
+      and computational biology. Through this work, I learned not only how
+      computational methods can support therapeutic discovery, but also how
+      scientific progress often comes from understanding why an approach
+      does not work as expected.
+    </p>
+
+    <p>
+      More broadly, the project introduced me to scientific thinking,
+      biological complexity, and the interdisciplinary nature of modern
+      quantitative biology. It played a major role in shaping my interest
+      in computational biology and systems-level approaches to research.
+    </p>
+
+    </div>
+
+
+<h2>Selected References</h2>
+
+<div class="content-box">
+
+  <ul class="reference-list">
+
+    <li>
+    
+      Centers for Disease Control and Prevention (2024).
+    
+      <a
+        href="https://www.cdc.gov/hantavirus/about/index.html"
+        target="_blank"
+      >
+        <u>About Hantavirus</u>
+      </a>
+    
+    </li>
+
+    <li>
+      Kim, W. K. et al. (2016). Genetic diversity and reassortment of Hantaan virus tripartite RNA genomes in nature, the Republic of Korea.
+      <a
+        href="https://doi.org/10.1371/journal.pntd.0004650"
+        target="_blank"
+      >
+        <u>DOI</u>
+    </li>
+    
+    <li>
+      Liu, X. et al. (2020). Vaccine and Therapeutics against Hantaviruses.
+        <a
+          href="https://doi.org/10.3389/fmicb.2019.02989"
+          target="_blank"
+        >
+          <u>DOI</u>
+    </li>
+
+    <li>
+      Ramsden, C. et al. (2008). High Rates of Molecular Evolution in Hantaviruses.
+      <a
+        href="https://doi.org/10.1093/molbev/msn093"
+        target="_blank"
+      >
+        <u>DOI</u>
+    </li>
+
+  </ul>
+
+</div>
+
+<h2>Supplementary Links</h2>
+<div class="content-box">
+
+  <a href="../pdfs/vaccine.pdf" target="_blank">
+  <u>Preliminary Research Paper</u>
+  </a>
+
+</div>
 
   </div>
 </section>
