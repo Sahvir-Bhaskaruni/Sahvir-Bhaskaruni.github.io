@@ -90,6 +90,7 @@
       as a sustainable, energy-dense fuel; however, many current production methods 
       remain inefficient, expensive, or environmentally costly.
       </p>
+
       <p>
       One promising alternative is dark fermentation, a biological process in which 
       microorganisms convert organic waste into hydrogen gas. While dark fermentation 
@@ -120,7 +121,7 @@
       the project. I was particularly involved in formulating the modeling 
       strategy and integrating our wet lab and modeling capabilities. More 
       detailed attributions for all of the team members can be found at the 
-      link <a href="https://2025.igem.wiki/virginia/attributions" target="_blank">
+      link<a href="https://2025.igem.wiki/virginia/attributions" target="_blank">
       <u>here</u>
       </a>.   
     </p>
@@ -140,7 +141,10 @@
     <div class="flow-step">
       <div class="flow-number">1</div>
       <h3>Part 1: Dark Fermentation + the Cysteinator</h3>
-      <p>figure to come</p>
+      <img
+        src="../images/iGEM_5.png"
+        alt="Dark Fermentation + Cysteinator Model"
+      >
       <p>
         The Cysteinator is designed to secrete L-Cysteine until a certain 
         concentration into the environment. This reduces the oxidative-reductive 
@@ -154,7 +158,10 @@
     <div class="flow-step">
       <div class="flow-number">2</div>
       <h3>Part 2: the Cysteinator</h3>
-      <p>figure to come</p>
+      <img
+        src="../images/iGEM_6.png"
+        alt="Cysteinator Function Slide"
+      >
       <p>
         As different organic matter environments have different H2 producing
         bacteria and are subject to different environmental conditions the team 
@@ -168,7 +175,10 @@
     <div class="flow-step">
       <div class="flow-number">3</div>
       <h3>Part 3: Multi-Scale Model</h3>
-      <p>figure to come</p>
+      <img
+        src="../images/iGEM_7.png"
+        alt="Model Construction Diagram"
+      >
       <p>
         In order to accurately modulate the device, we developed a multi-scale 
         model that is able to factor both environmental conditions and reflect 
@@ -181,7 +191,10 @@
     <div class="flow-step">
       <div class="flow-number">4</div>
       <h3>Part 4: Model - Device Interface</h3>
-      <p>figure to come</p>
+      <img
+        src="../images/iGEM_8.png"
+        alt="Model-Device Interface"
+      >
       <p>
         To minimize the impact of assumptions made during model constructions
         a Bayesian sampler and mean squared error cost function will be used 
@@ -197,13 +210,9 @@
     <div class="content-box">
 
       <p>
-        Below are the results from our model, and included is a 
+        Below are the results from our model, and a summary of our
         Techno-Economic Analysis (TEA) and Life-Cycle Assessment 
-        (LCA) to validate our design choices. 
-      </p>
-
-      <p>
-        results page is work in progress. 
+        (LCA).
       </p>
 
     </div>
@@ -212,9 +221,19 @@
 
 <div class="figure-card">
 
+  <img
+    src="../images/iGEM_1.png"
+    alt="Docking of L-Cysteine to CcdR Monomer"
+  >
+
 <p class="figure-caption">
   <strong>Modeling Figure 1.</strong>
-  FBA
+  The figure shows heatmaps plotting biomass growth and L-cysteine export based 
+  on the uptake of various metabolites under varying conditions. A-B: Real/synthetic 
+  wastewater conditions. C-D: Solid waste conditions. This shows the ability of the 
+  model to simulate diverse waste environments and device behavior in it. More 
+  information about how this was done can be found at this <a href="https://2025.igem.wiki/virginia/fba" target="_blank">
+  <u>link</u></a>.
 </p>
 
 </div>
@@ -222,10 +241,19 @@
 <!-- FIGURE 2 -->
 
 <div class="table-card">
+  
+  <img
+    src="../images/iGEM_2.png"
+    alt="Docking of L-Cysteine to CcdR Monomer"
+  >
 
 <p class="figure-caption">
   <strong>Modeling Figure 2.</strong>
-  Molecular Docking
+  The figure shows L-Cysteine docked to CcdR, this was done to attain the 
+  binding affinity between CcdR and L-Cysteine which was then used in the 
+  mechanistic model. More information about how this was done can be found 
+  at this <a href="https://2025.igem.wiki/virginia/mdoc" target="_blank">
+  <u>link</u></a>. 
 </p>
 
 </div>
@@ -234,9 +262,20 @@
 
 <div class="table-card">
 
+  <img
+    src="../images/iGEM_3.png"
+    alt="Results of stochasticity testing of mechanistic-model - dFBA integration"
+  >
+
 <p class="figure-caption">
   <strong>Modeling Figure 3.</strong>
-  Mechanistic Model
+  The figure shows the distribution of at what time the kill-switch in the device 
+  should be activated. This gives us actionable insight into the total production 
+  and export of L-Cysteine and the dynamics of the kill-switch. This can help 
+  inform how to regulate the kill-switch which can then inform how to modulate 
+  the device in future constructions. More information about how this was done can 
+  be found at this <a href="https://2025.igem.wiki/virginia/mechanistic" target="_blank">
+  <u>link</u></a>. 
 </p>
 
 </div>
@@ -245,21 +284,32 @@
 
 <div class="table-card">
 
-<p class="figure-caption">
-  <strong>TEA Figure</strong>
-</p>
-
-</div>
-
-<!-- FIGURE 5 -->
-
-<div class="table-card">
+  <img
+    src="../images/iGEM_4.png"
+    alt="Comparison of H2 production methods"
+  >
 
 <p class="figure-caption">
   <strong>LCA Figure</strong>
+  The figure shows the total emissions (include negative emissions) of common H<sub>2</sub>
+  production methods. Our analysis shows that Dark Fermentation + the Cysteinator is the
+  most sustaiable H<sub>2</sub> production method. The TEA supports this result showing 
+  it to be a cheaper production method at scale. More information about how this calculation 
+  was made and the TEA can be found at this <a href="https://2025.igem.wiki/virginia/sustainability" target="_blank">
+  <u>link</u></a>. 
 </p>
 
 </div>
+
+   <div class="content-box">
+
+      <p>
+        This is an abbreviated version of the results of our project. I encourage you 
+        to look through this <a href="https://2025.igem.wiki/virginia/engineering" target="_blank">
+        <u>link</u></a>, to see more comprehensive documentation of our results. 
+      </p>
+
+    </div>
 
   <h2>Discussion & Limitations</h2>
   
