@@ -617,7 +617,7 @@ section {
   width: 100%;
   max-width: 100%;
   height: auto;
-  max-height: 400px;
+  max-height: 300px;
   border-radius: var(--radius-md);
   margin: 1rem 0;
   object-fit: contain;
