@@ -912,3 +912,53 @@ footer {
     font-size: 1.3rem;
   }
 }
+
+/* Contact Section */
+
+.contact-section {
+  padding: var(--spacing-lg) 0;
+  border-top: 1px solid var(--border-color);
+  margin-top: var(--spacing-xl);
+}
+
+.contact-intro {
+  font-size: 1.1rem;
+  margin-bottom: var(--spacing-md);
+  color: var(--text-secondary);
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-sm) 0;
+  text-decoration: none;
+  color: var(--text-primary);
+  border-bottom: 1px solid transparent;
+  transition: border-color var(--transition-base);
+}
+
+.contact-link:hover {
+  border-bottom-color: var(--orange-accent);
+}
+
+.contact-icon {
+  font-size: 1.5rem;
+  display: inline-block;
+}
+
+.contact-text {
+  font-weight: 500;
+}
+
+@media (max-width: 700px) {
+  .contact-links {
+    gap: var(--spacing-md);
+  }
+}
