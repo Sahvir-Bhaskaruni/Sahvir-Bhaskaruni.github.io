@@ -916,49 +916,92 @@ footer {
 /* Contact Section */
 
 .contact-section {
-  padding: var(--spacing-lg) 0;
+  padding: var(--spacing-xl) 0;
   border-top: 1px solid var(--border-color);
   margin-top: var(--spacing-xl);
 }
 
+.contact-section h2 {
+  margin-bottom: var(--spacing-lg);
+  font-size: 2rem;
+}
+
 .contact-intro {
-  font-size: 1.1rem;
-  margin-bottom: var(--spacing-md);
+  font-size: 1.05rem;
+  margin-bottom: var(--spacing-xl);
   color: var(--text-secondary);
+  max-width: 600px;
+  line-height: 1.6;
 }
 
 .contact-links {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-md);
+  gap: var(--spacing-lg);
+  max-width: 600px;
 }
 
 .contact-link {
   display: flex;
   align-items: center;
-  gap: var(--spacing-sm);
-  padding: var(--spacing-sm) 0;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md) var(--spacing-sm);
   text-decoration: none;
   color: var(--text-primary);
-  border-bottom: 1px solid transparent;
-  transition: border-color var(--transition-base);
+  transition: color var(--transition-base), 
+              background-color var(--transition-base);
+  border-radius: var(--border-radius);
 }
 
 .contact-link:hover {
-  border-bottom-color: var(--orange-accent);
+  color: var(--orange-accent);
+  background-color: rgba(var(--orange-rgb), 0.05);
 }
 
 .contact-icon {
   font-size: 1.5rem;
-  display: inline-block;
+  min-width: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
 }
 
 .contact-text {
   font-weight: 500;
+  font-size: 1rem;
 }
 
+/* Mobile responsiveness */
 @media (max-width: 700px) {
+  .contact-section {
+    padding: var(--spacing-lg) 0;
+    margin-top: var(--spacing-lg);
+  }
+
+  .contact-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .contact-intro {
+    font-size: 1rem;
+    margin-bottom: var(--spacing-lg);
+  }
+
   .contact-links {
     gap: var(--spacing-md);
+  }
+
+  .contact-link {
+    padding: var(--spacing-md);
+  }
+
+  .contact-icon {
+    font-size: 1.25rem;
+  }
+
+  .contact-text {
+    font-size: 0.95rem;
   }
 }
