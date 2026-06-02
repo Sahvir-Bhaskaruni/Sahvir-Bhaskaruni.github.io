@@ -942,16 +942,33 @@ footer {
 }
 
 .contact-link {
-  display: flex;
-  align-items: center;
-  gap: var(--spacing-md);
-  padding: var(--spacing-md) var(--spacing-sm);
-  text-decoration: none;
-  color: var(--text-primary);
-  transition: color var(--transition-base), 
-              background-color var(--transition-base);
-  border-radius: var(--border-radius);
+display: flex;
+align-items: center;
+gap: var(--spacing-md);
+padding: var(--spacing-md) var(--spacing-sm);
+text-decoration: none;
+color: var(--text-primary);
+transition: color var(--transition-base),
+background-color var(--transition-base),
+border-color var(--transition-base),
+transform var(--transition-base);
+
+border-radius: var(--border-radius);
+
+/* NEW */
+border: 1px solid rgba(var(--orange-rgb), 0.35);
+background-color: rgba(var(--orange-rgb), 0.03);
 }
+
+.contact-link:hover {
+color: var(--orange-accent);
+background-color: rgba(var(--orange-rgb), 0.08);
+border-color: rgba(var(--orange-rgb), 0.8);
+
+/* subtle hover effect */
+transform: translateY(-2px);
+}
+
 
 .contact-link:hover {
   color: var(--orange-accent);
