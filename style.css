@@ -1111,3 +1111,7 @@ transform: translateY(-2px);
   color: var(--text-secondary);
   line-height: 1.5;
 }
+
+.experience-section + h2 {
+  margin-top: 2rem;
+}
