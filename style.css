@@ -1049,17 +1049,17 @@ transform: translateY(-2px);
 }
 
 .experience-dropdown {
-  background: transparent;
-  border: none;
-  border-top: 1px solid rgba(148, 163, 184, 0.15);
-  border-radius: 0;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-lg);
+  padding: 0 1.25rem;
   margin-top: 0;
 }
 
 .experience-dropdown summary {
   list-style: none;
   cursor: pointer;
-  padding: 0.75rem 0;
+  padding: 1rem 0;
   font-size: 0.95rem;
   font-weight: 500;
   color: var(--accent);
