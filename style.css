@@ -388,13 +388,14 @@ section {
 
 .project-status {
   display: inline-block;
-  margin-bottom: 0.75rem;
-  padding: 0.25rem 0.6rem;
-  border-radius: 999px;
-  background: rgba(251, 146, 60, 0.12);
-  color: var(--accent);
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   font-weight: 600;
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-full);
+  margin-bottom: 0.6rem;
+  background: var(--orange-bg-light);
+  color: var(--accent-secondary);
+  border: 1px solid var(--orange-border);
 }
 
 /* ========================================
