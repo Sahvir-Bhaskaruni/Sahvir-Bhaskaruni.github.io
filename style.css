@@ -386,6 +386,17 @@ section {
   margin-bottom: 2.5rem;
 }
 
+.project-status {
+  display: inline-block;
+  margin-bottom: 0.75rem;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  background: rgba(251, 146, 60, 0.12);
+  color: var(--accent);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
 /* ========================================
    CONTENT BOXES & CARDS
    ======================================== */
