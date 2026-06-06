@@ -310,7 +310,8 @@ section {
 #projects,
 #contact,
 #now,
-#interests {
+#interests,
+#in-progress {
   border-top: 1px solid var(--border-light);
 }
 
