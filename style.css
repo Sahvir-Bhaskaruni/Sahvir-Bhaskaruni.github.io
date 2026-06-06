@@ -752,6 +752,7 @@ section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
+  margin-bottom: 1.5rem; /* add this */
 }
 
 /* ========================================
@@ -1041,7 +1042,7 @@ transform: translateY(-2px);
 /* Experience Dropdown */
 
 .experience-section {
-  margin-top: 0.5rem;
+  margin-top: 0;
 }
 
 .experience-dropdown {
