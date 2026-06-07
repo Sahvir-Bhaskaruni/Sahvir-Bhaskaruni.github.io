@@ -1208,32 +1208,25 @@ transform: translateY(-2px);
 }
 
 .project-modal {
-  width: min(700px, 90vw);
-  max-height: 80vh;
-  padding: 0;
-  border: 1px solid rgba(148, 163, 184, 0.25);
-  border-radius: 16px;
-  background: var(--bg-secondary);
-  color: var(--text-primary);
-}
-
-.project-modal {
   position: fixed;
-
-  top: 50%;
-  left: 50%;
-
+  inset: 50% auto auto 50%;
   transform: translate(-50%, -50%);
 
   width: min(700px, 90vw);
   max-height: 80vh;
 
+  margin: 0;
   padding: 0;
+
+  border: 1px solid rgba(148, 163, 184, 0.25);
   border-radius: 16px;
+
   background: var(--bg-secondary);
+  color: var(--text-primary);
 }
 
 .project-modal[open] {
+  display: block;
   animation: modalFade 0.2s ease;
 }
 
