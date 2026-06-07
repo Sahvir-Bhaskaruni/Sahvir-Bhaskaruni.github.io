@@ -98,6 +98,47 @@
         </a>
 
       </div>
+
+      <div class="project-card" onclick="document.getElementById('deconv-modal').showModal()">
+  <span class="project-status">Writeup in Progress</span>
+  <h3>Bulk Transcriptomic Deconvolution</h3>
+  <p>
+    Benchmarking computational approaches for estimating cellular composition
+    from bulk RNA-seq data.
+  </p>
+</div>
+
+<dialog id="deconv-modal" class="project-modal">
+  <div class="modal-header">
+    <h2>Bulk Transcriptomic Deconvolution</h2>
+    <button onclick="document.getElementById('deconv-modal').close()">×</button>
+  </div>
+
+  <div class="modal-body">
+    <p>
+      This project explores computational approaches for estimating cellular
+      composition from bulk transcriptomic datasets.
+    </p>
+
+    <h3>Status</h3>
+    <p>
+      Analysis is complete and the full website writeup is currently in progress.
+    </p>
+
+    <h3>Methods</h3>
+    <p>
+      The project involves reference-based deconvolution, benchmarking against
+      known cellular proportions, and evaluating model performance across
+      biological contexts.
+    </p>
+
+    <h3>Next Steps</h3>
+    <p>
+      Final figures, interpretation, and a complete discussion section are being
+      prepared before this project receives a full standalone page.
+    </p>
+  </div>
+</dialog>
     </section>
 
     <section class="project-category">
