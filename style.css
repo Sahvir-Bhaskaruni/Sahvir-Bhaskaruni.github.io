@@ -548,6 +548,7 @@ section {
 
 .project-button {
   display: inline-block;
+  align-self: flex-start;
   margin-top: 1rem;
   padding: 0.65rem 1rem;
   border-radius: var(--radius-sm);
