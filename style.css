@@ -1296,3 +1296,7 @@ transform: translateY(-2px);
 .project-card p {
   flex: 1;
 }
+
+.project-category .projects-grid {
+  grid-template-columns: 1fr;
+}
