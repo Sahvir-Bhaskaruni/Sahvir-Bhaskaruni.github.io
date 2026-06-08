@@ -1171,6 +1171,7 @@ transform: translateY(-2px);
 
 .project-status {
   display: inline-block;
+  align-self: flex-start;
   margin-bottom: 0.75rem;
   padding: 0.25rem 0.65rem;
   border-radius: 999px;
