@@ -1282,3 +1282,17 @@ transform: translateY(-2px);
   color: var(--text-secondary);
   line-height: 1.6;
 }
+
+.modal-header button:hover {
+  color: var(--text-primary);
+}
+
+.project-card {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card p {
+  flex: 1;
+}

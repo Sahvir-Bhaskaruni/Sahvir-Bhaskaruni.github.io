@@ -62,93 +62,83 @@
     </section>
 
     <section class="project-category">
-      <h2>Projects in Development</h2>
-      <p class="section-subtitle">
-        Research projects with completed or ongoing analysis whose full writeups
-        are currently being prepared.
-      </p>
+  <h2>Projects in Development</h2>
+  <p class="section-subtitle">
+    Research projects with completed or ongoing analysis whose full writeups
+    are currently being prepared.
+  </p>
 
-      <div class="projects-grid">
+  <div class="projects-grid">
 
-        <a href="project-pages/deconvolution.html" class="project-card">
-          <span class="project-status">Writeup in Progress</span>
-          <h3>Bulk Transcriptomic Deconvolution</h3>
-          <p>
-            Benchmarking computational approaches for estimating cellular
-            composition from bulk RNA-seq data.
-          </p>
-        </a>
+    <a class="project-card" onclick="document.getElementById('deconv-modal').showModal()">
+      <span class="project-status">Writeup in Progress</span>
+      <h3>Bulk Transcriptomic Deconvolution</h3>
+      <p>Benchmarking computational approaches for estimating cellular composition from bulk RNA-seq data.</p>
+    </a>
 
-        <a href="project-pages/microglia.html" class="project-card">
-          <span class="project-status">Analysis Complete</span>
-          <h3>Single-Cell Microglia Analysis</h3>
-          <p>
-            Analysis of microglial transcriptional states using public
-            single-nucleus RNA-seq datasets.
-          </p>
-        </a>
+    <a class="project-card" onclick="document.getElementById('microglia-modal').showModal()">
+      <span class="project-status">Analysis Complete</span>
+      <h3>Single-Cell Microglia Analysis</h3>
+      <p>Analysis of microglial transcriptional states using public single-nucleus RNA-seq datasets.</p>
+    </a>
 
-        <a href="project-pages/calipro.html" class="project-card">
-          <span class="project-status">Ongoing</span>
-          <h3>EGFR Signaling Model Calibration</h3>
-          <p>
-            Computational modeling and parameter estimation for mechanistic
-            signaling pathway models.
-          </p>
-        </a>
+    <a class="project-card" onclick="document.getElementById('calipro-modal').showModal()">
+      <span class="project-status">Ongoing</span>
+      <h3>EGFR Signaling Model Calibration</h3>
+      <p>Computational modeling and parameter estimation for mechanistic signaling pathway models.</p>
+    </a>
 
-      </div>
-
-      <a class="project-card" onclick="document.getElementById('deconv-modal').showModal()">
-        <span class="project-status">Writeup in Progress</span>
-        <h3>Bulk Transcriptomic Deconvolution</h3>
-        <p>
-          Benchmarking computational approaches for estimating cellular composition
-          from bulk RNA-seq data.
-        </p>
-      </a>
-
-      <a class="project-card" onclick="document.getElementById('deconv-modal').showModal()">
-        <span class="project-status">Writeup in Progress</span>
-        <h3>Bulk Transcriptomic Deconvolution</h3>
-        <p>
-          Benchmarking computational approaches for estimating cellular composition
-          from bulk RNA-seq data.
-        </p>
-      </a>
-
-<dialog id="deconv-modal" class="project-modal">
-  <div class="modal-header">
-    <h2>Bulk Transcriptomic Deconvolution</h2>
-    <button onclick="document.getElementById('deconv-modal').close()">×</button>
   </div>
 
-  <div class="modal-body">
-    <p>
-      This project explores computational approaches for estimating cellular
-      composition from bulk transcriptomic datasets.
-    </p>
+  <dialog id="deconv-modal" class="project-modal">
+    <div class="modal-header">
+      <h2>Bulk Transcriptomic Deconvolution</h2>
+      <button onclick="document.getElementById('deconv-modal').close()">×</button>
+    </div>
+    <div class="modal-body">
+      <p>This project explores computational approaches for estimating cellular composition from bulk transcriptomic datasets.</p>
+      <h3>Status</h3>
+      <p>Analysis is complete and the full website writeup is currently in progress.</p>
+      <h3>Methods</h3>
+      <p>The project involves reference-based deconvolution, benchmarking against known cellular proportions, and evaluating model performance across biological contexts.</p>
+      <h3>Next Steps</h3>
+      <p>Final figures, interpretation, and a complete discussion section are being prepared before this project receives a full standalone page.</p>
+    </div>
+  </dialog>
 
-    <h3>Status</h3>
-    <p>
-      Analysis is complete and the full website writeup is currently in progress.
-    </p>
+  <dialog id="microglia-modal" class="project-modal">
+    <div class="modal-header">
+      <h2>Single-Cell Microglia Analysis</h2>
+      <button onclick="document.getElementById('microglia-modal').close()">×</button>
+    </div>
+    <div class="modal-body">
+      <p>Analysis of microglial transcriptional states across Alzheimer's and healthy populations using public single-nucleus RNA-seq datasets.</p>
+      <h3>Status</h3>
+      <p>Analysis is complete and the writeup is in progress.</p>
+      <h3>Methods</h3>
+      <p>Clustering, cell-type annotation, and differential state analysis using standard single-cell workflows.</p>
+      <h3>Next Steps</h3>
+      <p>Full writeup and figures being prepared for a standalone project page.</p>
+    </div>
+  </dialog>
 
-    <h3>Methods</h3>
-    <p>
-      The project involves reference-based deconvolution, benchmarking against
-      known cellular proportions, and evaluating model performance across
-      biological contexts.
-    </p>
+  <dialog id="calipro-modal" class="project-modal">
+    <div class="modal-header">
+      <h2>EGFR Signaling Model Calibration</h2>
+      <button onclick="document.getElementById('calipro-modal').close()">×</button>
+    </div>
+    <div class="modal-body">
+      <p>Computational modeling and parameter estimation for mechanistic ODE-based signaling pathway models.</p>
+      <h3>Status</h3>
+      <p>Ongoing.</p>
+      <h3>Methods</h3>
+      <p>Bayesian sampling and parameter optimization applied to large mechanistic models of EGFR signaling.</p>
+      <h3>Next Steps</h3>
+      <p>Calibration pipeline development and validation against experimental data.</p>
+    </div>
+  </dialog>
 
-    <h3>Next Steps</h3>
-    <p>
-      Final figures, interpretation, and a complete discussion section are being
-      prepared before this project receives a full standalone page.
-    </p>
-  </div>
-</dialog>
-    </section>
+</section>
 
     <section class="project-category">
       <h2>Posters, Presentations & Outputs</h2>
