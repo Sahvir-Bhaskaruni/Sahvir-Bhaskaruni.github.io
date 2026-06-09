@@ -10,19 +10,15 @@
 <body>
 
   <!-- NAVBAR -->
-
   <nav>
     <div class="container nav-content">
       <div class="logo">
         <a href="index.html">Sahvir Bhaskaruni</a>
       </div>
-  
       <div class="nav-links">
-  
         <div class="nav-item">
           <a href="bio.html">About</a>
         </div>
-  
         <div class="nav-item">
           <a href="index.html#projects">Projects</a>
           <div class="dropdown">
@@ -31,259 +27,245 @@
             <a href="project-pages/igem.html">Virginia iGEM 2025</a>
           </div>
         </div>
-  
         <div class="nav-item">
           <a href="index.html#contact">Contact</a>
         </div>
-  
       </div>
     </div>
   </nav>
 
-  <section class="page-section">
-  <div class="container page-content">
-    <h1>Projects</h1>
-    <p class="project-subtitle">
-      Below is a collection of projects spanning computational biology, systems modeling, synthetic biology, transcriptomics, and infectious disease research. Projects are categorized based on their current status, with featured projects highlighted for their significance and impact. Click on any project card to learn more about the methods, results, and next steps for each project. 
-    </p>
-    
-    <div class="project-landing-links">
+  <!-- HERO / INTRO -->
+  <div class="projects-page">
+    <div class="container projects-hero">
+      <h1>Projects</h1>
+      <p class="project-subtitle">
+        Below is a collection of projects spanning computational biology, systems modeling, synthetic biology, transcriptomics, and infectious disease research. Projects are categorized based on their current status, with featured projects highlighted for their significance and impact. Click on any project card to learn more about the methods, results, and next steps for each project.
+      </p>
+      <div class="project-landing-links">
         <a href="#featured-projects">Featured Projects</a>
         <a href="#in-development">Projects In Development</a>
         <a href="#posters&presentations">Posters & Presentations</a>
       </div>
+    </div>
 
-  </div>
-  </section>
-
-  <main class="projects-page">
-
+    <!-- FEATURED PROJECTS -->
     <section class="project-category" id="featured-projects">
-      <h2>Featured Projects</h2>
+      <div class="container">
+        <h2>Featured Projects</h2>
+        <div class="projects-grid">
 
-      <div class="projects-grid">
+          <a href="project-pages/igem.html" class="project-card">
+            <span class="project-status">Featured</span>
+            <h3>Virginia iGEM 2025</h3>
+            <p>A synthetic biology project exploring cysteine-mediated redox control in dark fermentation systems.</p>
+          </a>
 
-        <a href="project-pages/igem.html" class="project-card">
-          <span class="project-status">Featured</span>
-          <h3>Virginia iGEM 2025</h3>
-          <p>
-            A synthetic biology project exploring cysteine-mediated redox control
-            in dark fermentation systems.
-          </p>
-        </a>
+          <a href="project-pages/hantavirus.html" class="project-card">
+            <span class="project-status">Completed</span>
+            <h3>Pan-Hantavirus Vaccine Design</h3>
+            <p>Computational identification of conserved CD4+ T-cell epitopes for potential broad hantavirus vaccine design.</p>
+          </a>
 
-        <a href="project-pages/hantavirus.html" class="project-card">
-          <span class="project-status">Completed</span>
-          <h3>Pan-Hantavirus Vaccine Design</h3>
-          <p>
-            Computational identification of conserved CD4+ T-cell epitopes for
-            potential broad hantavirus vaccine design.
-          </p>
-        </a>
+          <a href="project-pages/pcdh1.html" class="project-card">
+            <span class="project-status">Completed</span>
+            <h3>PCDH1 Inhibitor Design</h3>
+            <p>In silico design of small-molecule candidates targeting PCDH1-mediated Andes orthohantavirus entry.</p>
+          </a>
 
-        <a href="project-pages/pcdh1.html" class="project-card">
-          <span class="project-status">Completed</span>
-          <h3>PCDH1 Inhibitor Design</h3>
-          <p>
-            In silico design of small-molecule candidates targeting PCDH1-mediated
-            Andes orthohantavirus entry.
-          </p>
-        </a>
-
+        </div>
       </div>
     </section>
 
+    <!-- PROJECTS IN DEVELOPMENT -->
     <section class="project-category" id="in-development">
-  <h2>Projects in Development</h2>
-  <p class="section-subtitle">
-    Research projects with completed or ongoing analysis whose full writeups
-    are currently being prepared.
-  </p>
+      <div class="container">
+        <h2>Projects in Development</h2>
+        <p class="section-subtitle">
+          Research projects with completed or ongoing analysis whose full writeups are currently being prepared.
+        </p>
+        <div class="projects-grid">
 
-  <div class="projects-grid">
+          <a class="project-card" onclick="document.getElementById('sysbio_FBA').showModal()">
+            <span class="project-status">Writeup in Progress</span>
+            <h3>Growth & Gene Essentiality in <i>S. Pneumoniae</i></h3>
+            <p>Evaluation of the relationship between growth conditions and gene essentiality in <i>S. Pneumoniae</i> via metabolic modeling.</p>
+          </a>
 
-    <a class="project-card" onclick="document.getElementById('sysbio_FBA').showModal()">
-      <span class="project-status">Writeup in Progress</span>
-      <h3>Growth & Gene Essentiality in <i>S. Pneumoniae</i></h3>
-      <p>Evaluation of the relationship between growth conditions and gene essentiality in <i>S. Pneumoniae</i> via. metabolic modeling.</p>
-    </a>
+          <a class="project-card" onclick="document.getElementById('sysbio_Logic').showModal()">
+            <span class="project-status">Analysis Complete</span>
+            <h3>Logic-Based Modeling of TNF/NF-&kappa;B Signaling</h3>
+            <p>Modeling a simple logic-based model of TNF/NF-&kappa;B signaling pathway to analyze infection-induced inflammation.</p>
+          </a>
 
-    <a class="project-card" onclick="document.getElementById('sysbio_Logic').showModal()">
-      <span class="project-status">Analysis Complete</span>
-      <h3>Logic-Based Modeling of TNF/NF-&kappa;B Signaling</h3>
-      <p>Modeling a simple logic-based model of TNF/NF-&kappa;B signaling pathway to analyze infection-induced inflammation.</p>
-    </a>
+          <a class="project-card" onclick="document.getElementById('sysbio_Agent').showModal()">
+            <span class="project-status">Analysis Complete</span>
+            <h3>Agent-Based Modeling of Rhinovirus Infection</h3>
+            <p>Developing an agent-based model of rhinovirus infection in the nasal epithelium to analyze the impact of immunosuppression on infection dynamics.</p>
+          </a>
 
-    <a class="project-card" onclick="document.getElementById('sysbio_Agent').showModal()">
-      <span class="project-status">Analysis Complete</span>
-      <h3>Agent-Based Modeling of Rhinovirus Infection</h3>
-      <p>Developing an agent-based model of rhinovirus infection in the nasal epithelium to analyze the impact of immunosuppression on infection dynamics.</p>
-    </a>
+          <a class="project-card" onclick="document.getElementById('microglia').showModal()">
+            <span class="project-status">Ongoing</span>
+            <h3>Evaluating Heterogeneity in Microglial Cell-State Classifications</h3>
+            <p>An exploration of the impact of clustering methods and parameters on the heterogeneity of microglial cell-state classifications across Alzheimer's and healthy microglial cell populations.</p>
+          </a>
 
-    <a class="project-card" onclick="document.getElementById('microglia').showModal()">
-      <span class="project-status">Ongoing</span>
-      <h3>Evaluating Heterogeneity in Microglial Cell-State Classifications</h3>
-      <p>An exploration of the impact of clustering methods and parameters on the heterogeneity of microglial cell-state classifications across Alzheimer's and healthy microglial cell populations; and its biological implications for understanding microglial function.</p>
-    </a>
+          <a class="project-card" onclick="document.getElementById('SELEX').showModal()">
+            <span class="project-status">Ongoing</span>
+            <h3>Computational SELEX Screening</h3>
+            <p>The development of a computational pipeline to assist SELEX screening for aptamer design to improve workflow efficiency and candidate selection.</p>
+          </a>
 
-    <a class="project-card" onclick="document.getElementById('SELEX').showModal()">
-      <span class="project-status">Ongoing</span>
-      <h3>Computational SELEX Screening</h3>
-      <p>The development of a computational pipeline to assist SELEX screening for aptamer design to identify immprove workflow efficiency and candidate selection.</p>
-    </a>
+          <a class="project-card" onclick="document.getElementById('param_opt').showModal()">
+            <span class="project-status">Ongoing</span>
+            <h3>Parameter Optimization</h3>
+            <p>The development of a computational pipeline to assist in parameter optimization of large ODE/PDE mechanistic models using Bayesian sampling.</p>
+          </a>
 
-    <a class="project-card" onclick="document.getElementById('param_opt').showModal()">
-      <span class="project-status">Ongoing</span>
-      <h3>Parameter Optimization</h3>
-      <p>The development of a computational pipeline to assist in parameter optimization of large ODE/PDE mechanistic models using Bayesian sampling.</p>
-    </a>
+          <a class="project-card" onclick="document.getElementById('rnaseq_deconv').showModal()">
+            <span class="project-status">Ongoing</span>
+            <h3>Bulk RNA-seq Deconvolution</h3>
+            <p>Exploring bulk RNA-seq deconvolution approaches to infer cell-cell signaling.</p>
+          </a>
 
-    <a class="project-card" onclick="document.getElementById('rnaseq_deconv').showModal()">
-      <span class="project-status">Ongoing</span>
-      <h3>Bulk RNA-seq Deconvolution</h3>
-      <p>Exploring bulk RNA-seq deconvolution approaches to infer cell-cell signaling.</p>
-    </a>
+        </div>
+      </div>
 
-  </div>
+      <!-- MODALS -->
+      <dialog id="sysbio_FBA" class="project-modal">
+        <div class="modal-header">
+          <h2>Growth & Gene Essentiality in S. Pneumoniae</h2>
+          <button onclick="document.getElementById('sysbio_FBA').close()">×</button>
+        </div>
+        <div class="modal-body">
+          <p>This project explores the relationship between growth conditions and gene essentiality via metabolic modeling.</p>
+          <h3>Status</h3>
+          <p>Writeup in progress.</p>
+          <h3>Methods</h3>
+          <p>Flux balance analysis and gene knockout simulations across growth conditions.</p>
+          <h3>Next Steps</h3>
+          <p>Full writeup being prepared for a standalone project page.</p>
+        </div>
+      </dialog>
 
-  <dialog id="sysbio_FBA" class="project-modal">
-    <div class="modal-header">
-      <h2>Bulk Transcriptomic Deconvolution</h2>
-      <button onclick="document.getElementById('sysbio_FBA').close()">×</button>
-    </div>
-    <div class="modal-body">
-      <p>This project explores computational approaches for estimating cellular composition from bulk transcriptomic datasets.</p>
-      <h3>Status</h3>
-      <p>Analysis is complete and the full website writeup is currently in progress.</p>
-      <h3>Methods</h3>
-      <p>The project involves reference-based deconvolution, benchmarking against known cellular proportions, and evaluating model performance across biological contexts.</p>
-      <h3>Next Steps</h3>
-      <p>Final figures, interpretation, and a complete discussion section are being prepared before this project receives a full standalone page.</p>
-    </div>
-  </dialog>
+      <dialog id="sysbio_Logic" class="project-modal">
+        <div class="modal-header">
+          <h2>Logic-Based Modeling of TNF/NF-κB Signaling</h2>
+          <button onclick="document.getElementById('sysbio_Logic').close()">×</button>
+        </div>
+        <div class="modal-body">
+          <p>Modeling infection-induced inflammation via a logic-based TNF/NF-κB signaling model.</p>
+          <h3>Status</h3>
+          <p>Analysis complete.</p>
+          <h3>Methods</h3>
+          <p>Boolean and logic-based modeling of signaling pathway dynamics.</p>
+          <h3>Next Steps</h3>
+          <p>Writeup in progress.</p>
+        </div>
+      </dialog>
 
-  <dialog id="sysbio_Logic" class="project-modal">
-    <div class="modal-header">
-      <h2>Single-Cell Microglia Analysis</h2>
-      <button onclick="document.getElementById('sysbio_Logic').close()">×</button>
-    </div>
-    <div class="modal-body">
-      <p>Analysis of microglial transcriptional states across Alzheimer's and healthy populations using public single-nucleus RNA-seq datasets.</p>
-      <h3>Status</h3>
-      <p>Analysis is complete and the writeup is in progress.</p>
-      <h3>Methods</h3>
-      <p>Clustering, cell-type annotation, and differential state analysis using standard single-cell workflows.</p>
-      <h3>Next Steps</h3>
-      <p>Full writeup and figures being prepared for a standalone project page.</p>
-    </div>
-  </dialog>
+      <dialog id="sysbio_Agent" class="project-modal">
+        <div class="modal-header">
+          <h2>Agent-Based Modeling of Rhinovirus Infection</h2>
+          <button onclick="document.getElementById('sysbio_Agent').close()">×</button>
+        </div>
+        <div class="modal-body">
+          <p>An agent-based model of rhinovirus infection in the nasal epithelium.</p>
+          <h3>Status</h3>
+          <p>Analysis complete.</p>
+          <h3>Methods</h3>
+          <p>Agent-based modeling of viral spread and immune response dynamics.</p>
+          <h3>Next Steps</h3>
+          <p>Writeup in progress.</p>
+        </div>
+      </dialog>
 
-  <dialog id="sysbio_Agent" class="project-modal">
-    <div class="modal-header">
-      <h2>EGFR Signaling Model Calibration</h2>
-      <button onclick="document.getElementById('sysbio_Agent').close()">×</button>
-    </div>
-    <div class="modal-body">
-      <p>Computational modeling and parameter estimation for mechanistic ODE-based signaling pathway models.</p>
-      <h3>Status</h3>
-      <p>Ongoing.</p>
-      <h3>Methods</h3>
-      <p>Bayesian sampling and parameter optimization applied to large mechanistic models of EGFR signaling.</p>
-      <h3>Next Steps</h3>
-      <p>Calibration pipeline development and validation against experimental data.</p>
-    </div>
-  </dialog>
+      <dialog id="microglia" class="project-modal">
+        <div class="modal-header">
+          <h2>Microglial Cell-State Classification</h2>
+          <button onclick="document.getElementById('microglia').close()">×</button>
+        </div>
+        <div class="modal-body">
+          <p>Evaluating heterogeneity in microglial cell-state classifications across Alzheimer's and healthy populations.</p>
+          <h3>Status</h3>
+          <p>Ongoing.</p>
+          <h3>Methods</h3>
+          <p>Single-nucleus RNA-seq clustering with varied parameters and methods.</p>
+          <h3>Next Steps</h3>
+          <p>Analysis and interpretation ongoing.</p>
+        </div>
+      </dialog>
 
-    <dialog id="microglia" class="project-modal">
-    <div class="modal-header">
-      <h2>EGFR Signaling Model Calibration</h2>
-      <button onclick="document.getElementById('microglia').close()">×</button>
-    </div>
-    <div class="modal-body">
-      <p>Computational modeling and parameter estimation for mechanistic ODE-based signaling pathway models.</p>
-      <h3>Status</h3>
-      <p>Ongoing.</p>
-      <h3>Methods</h3>
-      <p>Bayesian sampling and parameter optimization applied to large mechanistic models of EGFR signaling.</p>
-      <h3>Next Steps</h3>
-      <p>Calibration pipeline development and validation against experimental data.</p>
-    </div>
-  </dialog>
+      <dialog id="SELEX" class="project-modal">
+        <div class="modal-header">
+          <h2>Computational SELEX Screening</h2>
+          <button onclick="document.getElementById('SELEX').close()">×</button>
+        </div>
+        <div class="modal-body">
+          <p>A computational pipeline to assist SELEX screening for aptamer design.</p>
+          <h3>Status</h3>
+          <p>Ongoing.</p>
+          <h3>Methods</h3>
+          <p>Sequence analysis and candidate scoring pipeline development.</p>
+          <h3>Next Steps</h3>
+          <p>Pipeline refinement and validation.</p>
+        </div>
+      </dialog>
 
-    <dialog id="SELEX" class="project-modal">
-    <div class="modal-header">
-      <h2>EGFR Signaling Model Calibration</h2>
-      <button onclick="document.getElementById('SELEX').close()">×</button>
-    </div>
-    <div class="modal-body">
-      <p>Computational modeling and parameter estimation for mechanistic ODE-based signaling pathway models.</p>
-      <h3>Status</h3>
-      <p>Ongoing.</p>
-      <h3>Methods</h3>
-      <p>Bayesian sampling and parameter optimization applied to large mechanistic models of EGFR signaling.</p>
-      <h3>Next Steps</h3>
-      <p>Calibration pipeline development and validation against experimental data.</p>
-    </div>
-  </dialog>
+      <dialog id="param_opt" class="project-modal">
+        <div class="modal-header">
+          <h2>Parameter Optimization</h2>
+          <button onclick="document.getElementById('param_opt').close()">×</button>
+        </div>
+        <div class="modal-body">
+          <p>Computational pipeline for parameter optimization of large ODE/PDE mechanistic models.</p>
+          <h3>Status</h3>
+          <p>Ongoing.</p>
+          <h3>Methods</h3>
+          <p>Bayesian sampling and optimization approaches.</p>
+          <h3>Next Steps</h3>
+          <p>Calibration pipeline development and validation.</p>
+        </div>
+      </dialog>
 
-    <dialog id="param_opt" class="project-modal">
-    <div class="modal-header">
-      <h2>EGFR Signaling Model Calibration</h2>
-      <button onclick="document.getElementById('param_opt').close()">×</button>
-    </div>
-    <div class="modal-body">
-      <p>Computational modeling and parameter estimation for mechanistic ODE-based signaling pathway models.</p>
-      <h3>Status</h3>
-      <p>Ongoing.</p>
-      <h3>Methods</h3>
-      <p>Bayesian sampling and parameter optimization applied to large mechanistic models of EGFR signaling.</p>
-      <h3>Next Steps</h3>
-      <p>Calibration pipeline development and validation against experimental data.</p>
-    </div>
-  </dialog>
+      <dialog id="rnaseq_deconv" class="project-modal">
+        <div class="modal-header">
+          <h2>Bulk RNA-seq Deconvolution</h2>
+          <button onclick="document.getElementById('rnaseq_deconv').close()">×</button>
+        </div>
+        <div class="modal-body">
+          <p>Exploring bulk RNA-seq deconvolution approaches to infer cell-cell signaling.</p>
+          <h3>Status</h3>
+          <p>Ongoing.</p>
+          <h3>Methods</h3>
+          <p>Reference-based deconvolution benchmarking across biological contexts.</p>
+          <h3>Next Steps</h3>
+          <p>Analysis and writeup in progress.</p>
+        </div>
+      </dialog>
 
-    <dialog id="rnaseq_deconv" class="project-modal">
-    <div class="modal-header">
-      <h2>EGFR Signaling Model Calibration</h2>
-      <button onclick="document.getElementById('rnaseq_deconv').close()">×</button>
-    </div>
-    <div class="modal-body">
-      <p>Computational modeling and parameter estimation for mechanistic ODE-based signaling pathway models.</p>
-      <h3>Status</h3>
-      <p>Ongoing.</p>
-      <h3>Methods</h3>
-      <p>Bayesian sampling and parameter optimization applied to large mechanistic models of EGFR signaling.</p>
-      <h3>Next Steps</h3>
-      <p>Calibration pipeline development and validation against experimental data.</p>
-    </div>
-  </dialog>
+    </section>
 
-</section>
-
+    <!-- POSTERS & PRESENTATIONS -->
     <section class="project-category" id="posters&presentations">
-      <h2>Posters, Presentations & Outputs</h2>
+      <div class="container">
+        <h2>Posters, Presentations & Outputs</h2>
+        <div class="project-list">
 
-      <div class="project-list">
+          <div class="project-list-item">
+            <h3>iGEM Grand Jamboree 2025</h3>
+            <p>Presented Virginia iGEM's synthetic biology project at the International Genetically Engineered Machine competition.</p>
+          </div>
 
-        <div class="project-list-item">
-          <h3>iGEM Grand Jamboree 2025</h3>
-          <p>
-            Presented Virginia iGEM’s synthetic biology project at the
-            International Genetically Engineered Machine competition.
-          </p>
+          <div class="project-list-item">
+            <h3>Manuscripts in Preparation</h3>
+            <p>Research outputs currently being prepared for future dissemination.</p>
+          </div>
+
         </div>
-
-        <div class="project-list-item">
-          <h3>Manuscripts in Preparation</h3>
-          <p>
-            Research outputs currently being prepared for future dissemination.
-          </p>
-        </div>
-
       </div>
     </section>
 
-  </main>
+  </div><!-- end .projects-page -->
 
 </body>
 </html>
