@@ -1344,7 +1344,7 @@ transform: translateY(-2px);
 /* Replace the existing "Projects page spacing" block with this: */
 
 .projects-page {
-  padding-top: var(--spacing-xl);   /* 4rem — matches index sections */
+  padding-top: 0;
   padding-bottom: var(--spacing-xl);
 }
 
@@ -1359,7 +1359,8 @@ transform: translateY(-2px);
 }
 
 .project-category:first-of-type {
-  border-top: none; /* no divider above the very first category */
+  border-top: none;
+  padding-top: var(--spacing-lg); /* tighter gap after intro */
 }
 
 .project-category h2 {
@@ -1397,12 +1398,19 @@ transform: translateY(-2px);
 }
 
 .project-category + .project-category {
-  border-top: 1px solid var(--border-light);
-  /* Use negative margin + padding trick to make border full-width */
-  margin-left: -1.5rem;
-  margin-right: -1.5rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  border-top: none;
+  position: relative;
+}
+
+.project-category + .project-category::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  height: 1px;
+  background: var(--border-light);
 }
 
 .page-section:has(+ main.projects-page) {
