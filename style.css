@@ -1325,7 +1325,7 @@ transform: translateY(-2px);
   border-radius: var(--radius-full);
   background: var(--yellow-bg-light);
   border: 1px solid rgba(251, 191, 36, 0.28);
-  color: var(--text-bright);
+  color: var(--accent-secondary);
   font-size: 0.95rem;
   font-weight: 500;
   transition: background var(--transition-fast), transform var(--transition-fast), border-color var(--transition-fast);
@@ -1335,4 +1335,48 @@ transform: translateY(-2px);
   background: var(--yellow-bg-medium);
   border-color: var(--yellow-border-hover);
   transform: translateY(-2px);
+}
+
+/* Projects page spacing */
+.projects-page {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.projects-hero {
+  margin-bottom: 3rem;
+}
+
+.project-category {
+  margin-bottom: 3rem;
+}
+
+.project-category h2 {
+  margin-bottom: 0.75rem;
+}
+
+.section-subtitle {
+  margin-bottom: 1.5rem;
+}
+
+.project-grid,
+.development-grid {
+  margin-top: 1.5rem;
+}
+
+.outputs-list {
+  margin-top: 1.5rem;
+}
+
+/* Optional: slightly tighter spacing on mobile */
+@media (max-width: 768px) {
+  .projects-page {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .projects-hero,
+  .project-category {
+    margin-bottom: 2.5rem;
+  }
 }
