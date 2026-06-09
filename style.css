@@ -1331,27 +1331,39 @@ transform: translateY(-2px);
   transition: background var(--transition-fast), transform var(--transition-fast), border-color var(--transition-fast);
 }
 
+.project-landing-links a {
+  color: var(--accent-secondary); /* #FCD34D — same as interest-tag */
+}
+
 .project-landing-links a:hover {
   background: var(--yellow-bg-medium);
   border-color: var(--yellow-border-hover);
   transform: translateY(-2px);
 }
 
-/* Projects page spacing */
+/* Replace the existing "Projects page spacing" block with this: */
+
 .projects-page {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: var(--spacing-xl);   /* 4rem — matches index sections */
+  padding-bottom: var(--spacing-xl);
 }
 
 .projects-hero {
-  margin-bottom: 3rem;
+  margin-bottom: var(--spacing-xl); /* 4rem */
 }
 
 .project-category {
-  margin-bottom: 3rem;
+  padding-top: var(--spacing-xl);   /* 4rem */
+  margin-bottom: 0;
+  border-top: 1px solid var(--border-light); /* matches index section dividers */
+}
+
+.project-category:first-of-type {
+  border-top: none; /* no divider above the very first category */
 }
 
 .project-category h2 {
+  margin-top: 0; /* heading sits at top of padded section now */
   margin-bottom: 0.75rem;
 }
 
@@ -1368,15 +1380,13 @@ transform: translateY(-2px);
   margin-top: 1.5rem;
 }
 
-/* Optional: slightly tighter spacing on mobile */
 @media (max-width: 768px) {
   .projects-page {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: var(--spacing-lg);
+    padding-bottom: var(--spacing-lg);
   }
 
-  .projects-hero,
   .project-category {
-    margin-bottom: 2.5rem;
+    padding-top: var(--spacing-lg);
   }
 }
