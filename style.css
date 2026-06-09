@@ -1198,12 +1198,14 @@ transform: translateY(-2px);
 .project-list-item h3 {
   margin: 0 0 0.4rem;
   color: var(--text-primary);
+  text-align: center;
 }
 
 .project-list-item p {
   margin: 0;
   color: var(--text-secondary);
   line-height: 1.6;
+  text-align: center;
 }
 
 .project-card {
