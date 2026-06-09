@@ -9,12 +9,46 @@
 
 <body>
 
+  <!-- NAVBAR -->
+
   <nav>
-    <a href="index.html">Home</a>
-    <a href="bio.html">Bio</a>
-    <a href="projects.html">Projects</a>
-    <a href="index.html#contact">Contact</a>
+    <div class="container nav-content">
+      <div class="logo">
+        <a href="index.html">Sahvir Bhaskaruni</a>
+      </div>
+  
+      <div class="nav-links">
+  
+        <div class="nav-item">
+          <a href="bio.html">About</a>
+        </div>
+  
+        <div class="nav-item">
+          <a href="index.html#projects">Projects</a>
+          <div class="dropdown">
+            <a href="project-pages/hantavirus.html">Pan-Hantavirus Vaccine</a>
+            <a href="project-pages/pcdh1.html">PCDH1 Inhibitor Design</a>
+            <a href="project-pages/igem.html">Virginia iGEM 2025</a>
+          </div>
+        </div>
+  
+        <div class="nav-item">
+          <a href="index.html#contact">Contact</a>
+        </div>
+  
+      </div>
+    </div>
   </nav>
+
+  <section class="page-section">
+  <div class="container page-content">
+    <h1>Projects</h1>
+
+    <p class="project-subtitle">
+      A collection of projects spanning computational biology, systems modeling, synthetic biology, transcriptomics, and infectious disease research.
+    </p>
+  </div>
+  </section>
 
   <main class="projects-page">
 
@@ -114,10 +148,10 @@
 
   </div>
 
-  <dialog id="deconv-modal" class="project-modal">
+  <dialog id="sysbio_FBA" class="project-modal">
     <div class="modal-header">
       <h2>Bulk Transcriptomic Deconvolution</h2>
-      <button onclick="document.getElementById('deconv-modal').close()">×</button>
+      <button onclick="document.getElementById('sysbio_FBA').close()">×</button>
     </div>
     <div class="modal-body">
       <p>This project explores computational approaches for estimating cellular composition from bulk transcriptomic datasets.</p>
@@ -130,10 +164,10 @@
     </div>
   </dialog>
 
-  <dialog id="microglia-modal" class="project-modal">
+  <dialog id="sysbio_Logic" class="project-modal">
     <div class="modal-header">
       <h2>Single-Cell Microglia Analysis</h2>
-      <button onclick="document.getElementById('microglia-modal').close()">×</button>
+      <button onclick="document.getElementById('sysbio_Logic').close()">×</button>
     </div>
     <div class="modal-body">
       <p>Analysis of microglial transcriptional states across Alzheimer's and healthy populations using public single-nucleus RNA-seq datasets.</p>
@@ -146,10 +180,74 @@
     </div>
   </dialog>
 
-  <dialog id="calipro-modal" class="project-modal">
+  <dialog id="sysbio_Agent" class="project-modal">
     <div class="modal-header">
       <h2>EGFR Signaling Model Calibration</h2>
-      <button onclick="document.getElementById('calipro-modal').close()">×</button>
+      <button onclick="document.getElementById('sysbio_Agent').close()">×</button>
+    </div>
+    <div class="modal-body">
+      <p>Computational modeling and parameter estimation for mechanistic ODE-based signaling pathway models.</p>
+      <h3>Status</h3>
+      <p>Ongoing.</p>
+      <h3>Methods</h3>
+      <p>Bayesian sampling and parameter optimization applied to large mechanistic models of EGFR signaling.</p>
+      <h3>Next Steps</h3>
+      <p>Calibration pipeline development and validation against experimental data.</p>
+    </div>
+  </dialog>
+
+    <dialog id="microglia" class="project-modal">
+    <div class="modal-header">
+      <h2>EGFR Signaling Model Calibration</h2>
+      <button onclick="document.getElementById('microglia').close()">×</button>
+    </div>
+    <div class="modal-body">
+      <p>Computational modeling and parameter estimation for mechanistic ODE-based signaling pathway models.</p>
+      <h3>Status</h3>
+      <p>Ongoing.</p>
+      <h3>Methods</h3>
+      <p>Bayesian sampling and parameter optimization applied to large mechanistic models of EGFR signaling.</p>
+      <h3>Next Steps</h3>
+      <p>Calibration pipeline development and validation against experimental data.</p>
+    </div>
+  </dialog>
+
+    <dialog id="SELEX" class="project-modal">
+    <div class="modal-header">
+      <h2>EGFR Signaling Model Calibration</h2>
+      <button onclick="document.getElementById('SELEX').close()">×</button>
+    </div>
+    <div class="modal-body">
+      <p>Computational modeling and parameter estimation for mechanistic ODE-based signaling pathway models.</p>
+      <h3>Status</h3>
+      <p>Ongoing.</p>
+      <h3>Methods</h3>
+      <p>Bayesian sampling and parameter optimization applied to large mechanistic models of EGFR signaling.</p>
+      <h3>Next Steps</h3>
+      <p>Calibration pipeline development and validation against experimental data.</p>
+    </div>
+  </dialog>
+
+    <dialog id="param_opt" class="project-modal">
+    <div class="modal-header">
+      <h2>EGFR Signaling Model Calibration</h2>
+      <button onclick="document.getElementById('param_opt').close()">×</button>
+    </div>
+    <div class="modal-body">
+      <p>Computational modeling and parameter estimation for mechanistic ODE-based signaling pathway models.</p>
+      <h3>Status</h3>
+      <p>Ongoing.</p>
+      <h3>Methods</h3>
+      <p>Bayesian sampling and parameter optimization applied to large mechanistic models of EGFR signaling.</p>
+      <h3>Next Steps</h3>
+      <p>Calibration pipeline development and validation against experimental data.</p>
+    </div>
+  </dialog>
+
+    <dialog id="rnaseq_deconv" class="project-modal">
+    <div class="modal-header">
+      <h2>EGFR Signaling Model Calibration</h2>
+      <button onclick="document.getElementById('rnaseq_deconv').close()">×</button>
     </div>
     <div class="modal-body">
       <p>Computational modeling and parameter estimation for mechanistic ODE-based signaling pathway models.</p>
