@@ -1192,6 +1192,7 @@ transform: translateY(-2px);
   background: var(--bg-secondary);
   border: 1px solid rgba(148, 163, 184, 0.15);
   border-radius: 14px;
+  text-align: center;
 }
 
 .project-list-item h3 {
